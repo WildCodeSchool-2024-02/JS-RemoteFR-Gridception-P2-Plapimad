@@ -5,6 +5,11 @@ body {
   line-height: 1.7;
   color: #eee;
   margin: 0;
+
+}
+
+p {
+  color: black;
 }
 
 .container {
@@ -138,12 +143,14 @@ footer {
 }
 
 @keyframes blink {
+
   20%,
   24%,
   55% {
     color: #111;
     text-shadow: none;
   }
+
   0%,
   19%,
   21%,
