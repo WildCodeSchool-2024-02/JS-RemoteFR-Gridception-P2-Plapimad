@@ -1,9 +1,9 @@
 import "../scss/accueil.scss";
 function Accueil() {
   return (
-    <>
+    <div className="global-div">
       <div className="logos_bar">
-        <img src="../assets/images/Logo_Plapimad.png" alt="Logo Plapimad" />
+        <img src="./assets/images/Logo_Plapimad.png" alt="Logo Plapimad" />
 
         <div className="logos">
           <img src="./assets/images/logo_GitHub.jpg" alt="Logo GitHub" />
@@ -24,7 +24,7 @@ function Accueil() {
         <h1>AventuresAtmo</h1>
         <p>Chaque prévisions est une opportunité à Tours</p>
       </div>
-    </>
+    </div>
   );
 }
 export default Accueil;
