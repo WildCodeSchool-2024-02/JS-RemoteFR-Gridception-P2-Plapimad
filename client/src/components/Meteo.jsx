@@ -4,10 +4,13 @@ import axios from "axios";
 function Meteo() {
   const [datas, setDatas] = useState({});
 
+  const API_KEY = import.meta.env.VITE_API_KEY;
+  console.log(API_KEY);
+
   useEffect(() => {
     axios
       .get(
-        `https://api.openweathermap.org/data/2.5/weather?q=Tours&appid=${import.meta.env.VITE_API_KEY}&units=metric&lang=fr`
+        `https://api.openweathermap.org/data/2.5/weather?q=Tours&appid=${API_KEY}&units=metric&lang=fr`
       )
       .then((results) => {
         setDatas(results.data);
