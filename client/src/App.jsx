@@ -1,9 +1,14 @@
+
 import "./App.css";
 import Contact from "./components/Contact";
-
+import Accueil from "./components/Accueil";
 
 function App() {
-  return (<div><Contact/></div> 
+  return (
+    <>
+          <Accueil />
+          <Contact/>
+   </> 
   )  ;
 }
 
