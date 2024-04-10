@@ -26,6 +26,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 10rem;
 }
 
 h1 {
@@ -35,4 +36,9 @@ h1 {
 p {
   color: white;
   font-size: 2rem;
+}
+.France_map {
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
 }
