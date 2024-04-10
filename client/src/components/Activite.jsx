@@ -1,9 +1,11 @@
+import Meteo from "./Meteo";
+
 function Activite() {
   return (
     <div className="activite-container">
       <h1>Qu'allons nous faire aujourd'hui ?</h1>
 
-      <h2>Météo</h2>
+      <Meteo />
 
       <h2>Les bons plans culinaires</h2>
       <p>
