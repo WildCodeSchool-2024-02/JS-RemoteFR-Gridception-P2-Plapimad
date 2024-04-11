@@ -1,25 +1,31 @@
+import "../scss/contact.scss"
 function Contact () {
 
     return(
-        <div><h1>Nous contacter</h1>
+        <div>
+          <section className="backgroundimage"><h1>Nous contacter</h1></section>
+          
         <form action="mon formulaire de contact" method="post">
         <ul>
     <li>
-      <p className="lastname">Nom</p>
-      <input  />
+      <label className="lastname">Nom</label>
+      <input placeholder="Nom"  />
     </li>
     <li>
-      <p className="name">Prénom</p>
-      <input  />
+      <label className="name">Prénom</label>
+      <input placeholder="Prénom" />
     </li>
     <li>
-      <p className="mail">E-mail</p>
-      <input  />
+      <label className="mail">E-mail</label>
+      <input placeholder="Mail" />
     </li>
         <li>
-      <p className="message">Message</p>
-      <input  />
+      <label className="message">Message</label>
+      <textarea name="messagearea" id="messagearea" cols="30" rows="10"></textarea >
     </li>
+      <li>
+      <input type="submit" value="envoyer" />
+      </li>
     </ul>
         </form>
         </div>
