@@ -1,6 +1,8 @@
+import "../scss/Culinaire.scss";
+
 function Culinaire() {
   return (
-    <div>
+    <div className="culinaire-container">
       <h2>Les bons plans culinaires</h2>
       <p>
         Que vous soyez de passage sur Tours ou Tourengeaux bien établis, vous
