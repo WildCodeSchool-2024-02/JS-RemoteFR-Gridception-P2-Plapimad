@@ -5,7 +5,6 @@ import "../scss/Meteo.scss";
 function Meteo() {
   const [datas, setDatas] = useState({});
   const API = import.meta.env.VITE_API_KEY;
-  console.log(API);
 
   useEffect(() => {
     axios
