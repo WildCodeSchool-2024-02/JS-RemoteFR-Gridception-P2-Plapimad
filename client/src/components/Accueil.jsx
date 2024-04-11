@@ -1,22 +1,66 @@
+import "../scss/accueil.scss";
+import logo_GitHub from "../assets/images/logo_GitHub.png";
+import carte_France from "../assets/images/carte_France3.png";
+import logo_twitter from "../assets/images/logo_twitter.png";
+import Logo_Plapimad from "../assets/images/Logo_PLapimad3.png";
+import logo_instagram from "../assets/images/logo_instagram.png";
+import logo_pinterest from "../assets/images/logo_pinterest.png";
+
 function Accueil() {
+  return (
+    <div className="global-div">
+      <div className="logos_bar">
+        <img id="logo_Plapimad" src={Logo_Plapimad} alt="Logo Plapimad" />
 
-    return (
-        <>
-            <div className="nav_bar">
-                <img src="../assets/images/Logo_Plapimad.png" alt="Logo Plapimad" />
-                <ul>
-                    <li>Activités</li>
-                    <li>Contact</li>
-                </ul>
-                <div className="logos">
-                    <img src="" alt="logo GitHub" />
+        <div className="logos">
+          <a
+            target="blank"
+            href="https://github.com/WildCodeSchool-2024-02/JS-RemoteFR-Gridception-P2-Plapimad"
+          >
+            <img className="img_accueil" src={logo_GitHub} alt="Logo GitHub" />
+          </a>
+          <a target="blank" href="https://twitter.com/?lang=fr">
+            <img
+              className="img_accueil"
+              src={logo_twitter}
+              alt="Logo Tweeter"
+            />
+          </a>
+          <a target="blank" href="https://www.instagram.com/">
+            <img
+              className="img_accueil"
+              src={logo_instagram}
+              alt="Logo Instagram"
+            />
+          </a>
+          <a target="blank" href="https://www.pinterest.fr/">
+            <img
+              className="img_accueil"
+              src={logo_pinterest}
+              alt="Logo pinterest"
+            />
+          </a>
+        </div>
+      </div>
 
+      <ul className="ul_nav_bar">
+        <li>
+          <a href="">Activités</a>
+        </li>
+        <li>
+          <a href="">Contact</a>
+        </li>
+      </ul>
 
-                </div>
-            </div>
-            <h1>AventuresAtmo</h1>
-            <p>Chaque prévisions est une opportunité à Tours</p>
-        </>
-    )
+      <div className="principal_title">
+        <h1>AventuresAtmo</h1>
+        <p>Chaque prévision est une opportunité à Tours</p>
+      </div>
+
+      <div className="France_map">
+        <img id="France" src={carte_France} alt="carte de la France" />
+      </div>
+    </div>
+  );
 }
 export default Accueil;
