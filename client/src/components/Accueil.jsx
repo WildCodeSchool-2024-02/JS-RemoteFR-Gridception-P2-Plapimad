@@ -13,18 +13,33 @@ function Accueil() {
         <img id="logo_Plapimad" src={Logo_Plapimad} alt="Logo Plapimad" />
 
         <div className="logos">
-          <img className="img_accueil" src={logo_GitHub} alt="Logo GitHub" />
-          <img className="img_accueil" src={logo_twitter} alt="Logo Tweeter" />
-          <img
-            className="img_accueil"
-            src={logo_instagram}
-            alt="Logo Instagram"
-          />
-          <img
-            className="img_accueil"
-            src={logo_pinterest}
-            alt="Logo pinterest"
-          />
+          <a
+            target="blank"
+            href="https://github.com/WildCodeSchool-2024-02/JS-RemoteFR-Gridception-P2-Plapimad"
+          >
+            <img className="img_accueil" src={logo_GitHub} alt="Logo GitHub" />
+          </a>
+          <a target="blank" href="https://twitter.com/?lang=fr">
+            <img
+              className="img_accueil"
+              src={logo_twitter}
+              alt="Logo Tweeter"
+            />
+          </a>
+          <a target="blank" href="https://www.instagram.com/">
+            <img
+              className="img_accueil"
+              src={logo_instagram}
+              alt="Logo Instagram"
+            />
+          </a>
+          <a target="blank" href="https://www.pinterest.fr/">
+            <img
+              className="img_accueil"
+              src={logo_pinterest}
+              alt="Logo pinterest"
+            />
+          </a>
         </div>
       </div>
 
