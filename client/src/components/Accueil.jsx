@@ -1,13 +1,18 @@
 import "../scss/accueil.scss";
+import logo_GitHub from "../assets/images/logo_GitHub.png";
+import carte_France from "../assets/images/carte_France.png";
+import logo_twitter from "../assets/images/logo_twitter.png";
+import Logo_Plapimad from "../assets/images/Logo_Plapimad.png";
+
 function Accueil() {
   return (
     <div className="global-div">
       <div className="logos_bar">
-        <img src="./assets/images/Logo_Plapimad.png" alt="Logo Plapimad" />
+        <img id="logo_Plapimad" src={Logo_Plapimad} alt="Logo Plapimad" />
 
         <div className="logos">
-          <img src="./assets/images/logo_GitHub.jpg" alt="Logo GitHub" />
-          <img src="" alt="Logo Tweeter" />
+          <img src={logo_GitHub} alt="Logo GitHub" />
+          <img src={logo_twitter} alt="Logo Tweeter" />
         </div>
       </div>
 
@@ -24,8 +29,9 @@ function Accueil() {
         <h1>AventuresAtmo</h1>
         <p>Chaque prévision est une opportunité à Tours</p>
       </div>
+
       <div className="France_map">
-        <img src="./assets/images/carte_France.png" alt="carte de la France" />
+        <img id="France" src={carte_France} alt="carte de la France" />
       </div>
     </div>
   );
