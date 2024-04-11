@@ -1,8 +1,10 @@
 import "../scss/accueil.scss";
 import logo_GitHub from "../assets/images/logo_GitHub.png";
-import carte_France from "../assets/images/carte_France.png";
+import carte_France from "../assets/images/carte_France3.png";
 import logo_twitter from "../assets/images/logo_twitter.png";
-import Logo_Plapimad from "../assets/images/Logo_Plapimad.png";
+import Logo_Plapimad from "../assets/images/Logo_PLapimad3.png";
+import logo_instagram from "../assets/images/logo_instagram.png";
+import logo_pinterest from "../assets/images/logo_pinterest.png";
 
 function Accueil() {
   return (
@@ -11,8 +13,18 @@ function Accueil() {
         <img id="logo_Plapimad" src={Logo_Plapimad} alt="Logo Plapimad" />
 
         <div className="logos">
-          <img src={logo_GitHub} alt="Logo GitHub" />
-          <img src={logo_twitter} alt="Logo Tweeter" />
+          <img className="img_accueil" src={logo_GitHub} alt="Logo GitHub" />
+          <img className="img_accueil" src={logo_twitter} alt="Logo Tweeter" />
+          <img
+            className="img_accueil"
+            src={logo_instagram}
+            alt="Logo Instagram"
+          />
+          <img
+            className="img_accueil"
+            src={logo_pinterest}
+            alt="Logo pinterest"
+          />
         </div>
       </div>
 
