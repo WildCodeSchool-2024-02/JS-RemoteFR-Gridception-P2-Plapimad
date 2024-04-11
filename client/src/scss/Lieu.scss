@@ -1,0 +1,12 @@
+.lieu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 1rem 0 1rem;
+  img {
+    width: 10rem;
+    height: auto;
+    box-shadow: 5px 5px 5px gray;
+  }
+}
