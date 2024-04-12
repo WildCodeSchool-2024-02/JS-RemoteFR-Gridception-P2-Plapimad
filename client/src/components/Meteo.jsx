@@ -5,13 +5,11 @@ import "../scss/Meteo.scss";
 function Meteo() {
   const [datas, setDatas] = useState({});
 
-
   const API_KEY = import.meta.env.VITE_API_KEY;
 
   useEffect(() => {
     axios
       .get(
-
         `https://api.openweathermap.org/data/2.5/weather?q=Tours&appid=${API_KEY}&units=metric&lang=fr`
       )
       .then((results) => {

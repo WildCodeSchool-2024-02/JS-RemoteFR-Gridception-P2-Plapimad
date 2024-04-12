@@ -54,7 +54,7 @@ function Accueil() {
 
       <div className="principal_title">
         <h1>AventuresAtmo</h1>
-        <p>Chaque prévision est une opportunité à Tours</p>
+        <p>"Chaque prévision est une opportunité à Tours"</p>
       </div>
 
       <div className="France_map">
