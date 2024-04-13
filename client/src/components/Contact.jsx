@@ -8,23 +8,23 @@ function Contact () {
         <form action="mon formulaire de contact" method="post">
         <ul>
     <li>
-      <label className="lastname">Nom</label>
-      <input placeholder="Nom"  />
+      <label className="lastname"></label>
+      <input placeholder="Nom*"  />
     </li>
     <li>
-      <label className="name">Prénom</label>
-      <input placeholder="Prénom" />
+      <label className="name"></label>
+      <input placeholder="Prénom*" />
     </li>
     <li>
-      <label className="mail">E-mail</label>
-      <input placeholder="Mail" />
+      <label className="mail"></label>
+      <input placeholder="Mail*" />
     </li>
         <li>
-      <label className="message">Message</label>
-      <textarea name="messagearea" id="messagearea" cols="30" rows="10"></textarea >
+      <label className="message"></label>
+      <textarea  placeholder="Message*"name="messagearea" id="messagearea" cols="30" rows="10"></textarea >
     </li>
-      <li>
-      <input type="submit" value="envoyer" />
+      <li>        
+      <input className="button" class="styled" type="button" value="Envoyez votre demande" />        
       </li>
     </ul>
         </form>
