@@ -16,7 +16,7 @@ function Meteo() {
       )
       .then((results) => {
         setDatas(results.data);
-        console.info(results);
+        
       })
       .catch((err) => console.info(err));
   }, []);

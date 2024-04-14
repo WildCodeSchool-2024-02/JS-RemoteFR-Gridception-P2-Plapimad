@@ -5,7 +5,7 @@ function Contact () {
         <div>
           <section className="backgroundimage"><h1>Nous contacter</h1></section>
           
-        <form action="mon formulaire de contact" method="post">
+        <form action="mon-formulaire" method="post">
         <ul>
     <li>
       <label className="lastname"></label>
@@ -24,7 +24,7 @@ function Contact () {
       <textarea  placeholder="Message*"name="messagearea" id="messagearea" cols="30" rows="10"></textarea >
     </li>
       <li>        
-      <input className="button" class="styled" type="button" value="Envoyez votre demande" />        
+      <input className="button"  type="submit" value="Envoyez votre demande" />        
       </li>
     </ul>
         </form>
