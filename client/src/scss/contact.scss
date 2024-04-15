@@ -18,7 +18,7 @@ form{
    
     display: flex;
     justify-content: center;
-    background-color: rgb(220,220,220)
+    background-color: rgb(173,216,230)
     ;
      margin-left: 5%;
      margin-right: 5%;
@@ -46,11 +46,14 @@ ul{
 }
 input{
     width: 100%;
-    
+    background-color: white;
+    border: none;
 }
 textarea{
     width: 100%;
     font-family: Arial;
+    border: none;
+    
 }
 .button{
         background-color: orangered;
