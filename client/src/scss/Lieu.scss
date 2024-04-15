@@ -4,6 +4,7 @@
   align-items: center;
   gap: 1rem;
   margin: 0 1rem 0 1rem;
+
   img {
     width: 414px;
     height: auto;
@@ -11,5 +12,26 @@
   }
 }
 
-.carousel-root {
+.carousel .overlay {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0.5rem;
+  margin-right: 10%;
+  margin-left: 10%;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+
+.carousel .overlay_title {
+  text-align: center;
+}
+
+.carousel .overlay_text {
+  text-align: center;
+}
+
+.overlay {
+  width: 80%;
 }
