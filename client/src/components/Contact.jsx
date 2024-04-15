@@ -1,11 +1,12 @@
-import "../scss/contact.scss"
+import "../scss/contact.scss";
+
 function Contact () {
 
     return(
         <div>
-          <section className="backgroundimage"><h1>Nous contacter</h1></section>
+          <section className="backgroundimage"><h1>Une idée à suggérer? <br /> N'hésitez pas à nous contacter</h1></section>
           
-        <form action="mon-formulaire" method="post">
+        <form action="mon-formulaire" method="get">
         <ul>
     <li>
       <label className="lastname"></label>
