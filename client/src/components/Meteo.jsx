@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "../scss/Meteo.scss";
-import Lieu from "./Lieu";
 
 function Meteo() {
   const [datas, setDatas] = useState({});
