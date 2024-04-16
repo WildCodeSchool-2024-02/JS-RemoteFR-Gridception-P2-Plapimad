@@ -28,6 +28,8 @@ const restoListe = [
 ];
 
 function Restaurants() {
+  restoListe.forEach((element) => console.log(element));
+
   return (
     <div className="culinaire-container">
       <h2>Les bons plans culinaires</h2>
@@ -49,9 +51,37 @@ function Restaurants() {
       </a>
 
       <h4>{restoListe[1].nom}</h4>
-      <p>
-        {restoListe[1].adresse}, {restoListe[1].image}
-      </p>
+      <p> {restoListe[1].adresse}, </p>
+      <a
+        href="https://www.restaurant-levidence.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {" "}
+        <img src={resto2} alt="lopidom" />
+      </a>
+
+      <h4>{restoListe[2].nom}</h4>
+      <p> {restoListe[2].adresse}, </p>
+      <a
+        href="https://restaurant-arbore-et-sens.fr"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {" "}
+        <img src={resto3} alt="lopidom" />
+      </a>
+
+      <h4>{restoListe[3].nom}</h4>
+      <p> {restoListe[3].adresse}, </p>
+      <a
+        href="https://www.chateaudepray.fr"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {" "}
+        <img src={resto4} alt="lopidom" />
+      </a>
     </div>
   );
 }
