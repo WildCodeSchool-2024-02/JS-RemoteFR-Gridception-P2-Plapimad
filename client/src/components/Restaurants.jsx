@@ -2,7 +2,7 @@ import resto1 from "../assets/images/LOpidom.jpg";
 import resto2 from "../assets/images/levidence.webp";
 import resto3 from "../assets/images/Arboreetsens.jpg";
 import resto4 from "../assets/images/chateaupray.jpg";
-import "../scss/Lieu.scss";
+import "../scss/Restaurant.scss";
 
 const restoListe = [
   {
@@ -25,10 +25,34 @@ const restoListe = [
     adresse: "rue du Cèdre, à Chargé, Amboise, 37530, France",
     image: <img src={resto4} alt="chateau de pray" />,
   },
+  {
+    nom: "Château de Pray",
+    adresse: "rue du Cèdre, à Chargé, Amboise, 37530, France",
+    image: <img src={resto4} alt="chateau de pray" />,
+  },
+  {
+    nom: "Château de Pray",
+    adresse: "rue du Cèdre, à Chargé, Amboise, 37530, France",
+    image: <img src={resto4} alt="chateau de pray" />,
+  },
+  {
+    nom: "Château de Pray",
+    adresse: "rue du Cèdre, à Chargé, Amboise, 37530, France",
+    image: <img src={resto4} alt="chateau de pray" />,
+  },
+  {
+    nom: "Château de Pray",
+    adresse: "rue du Cèdre, à Chargé, Amboise, 37530, France",
+    image: <img src={resto4} alt="chateau de pray" />,
+  },
 ];
 
 function Restaurants() {
-  restoListe.forEach((element) => console.log(element));
+  /*const restoRandom = restoListe.map((resto, Math.ramdom) => {
+    Math.ramdom()
+    return restoRandom;
+  });
+  console.info(restoRandom);*/
 
   return (
     <div className="culinaire-container">
@@ -39,49 +63,17 @@ function Restaurants() {
         faire vos retours sur les endroits que nous avons sélectionnés pour vous
         !
       </p>
-      <h4>{restoListe[0].nom}</h4>
-      <p> {restoListe[0].adresse}, </p>
-      <a
-        href="https://www.lopidom.fr/fr/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {" "}
-        <img src={resto1} alt="lopidom" />
-      </a>
-
-      <h4>{restoListe[1].nom}</h4>
-      <p> {restoListe[1].adresse}, </p>
-      <a
-        href="https://www.restaurant-levidence.com"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {" "}
-        <img src={resto2} alt="lopidom" />
-      </a>
-
-      <h4>{restoListe[2].nom}</h4>
-      <p> {restoListe[2].adresse}, </p>
-      <a
-        href="https://restaurant-arbore-et-sens.fr"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {" "}
-        <img src={resto3} alt="lopidom" />
-      </a>
-
-      <h4>{restoListe[3].nom}</h4>
-      <p> {restoListe[3].adresse}, </p>
-      <a
-        href="https://www.chateaudepray.fr"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {" "}
-        <img src={resto4} alt="lopidom" />
-      </a>
+      <div>
+        <div>
+          {restoListe.map((resto, index) => (
+            <>
+              <div key={resto.nom}>{resto.nom}</div>
+              <div key={resto.nom}>{resto.image}</div>
+              <div key={resto.nom}>{resto.adresse}</div>
+            </>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
