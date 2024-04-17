@@ -1,5 +1,3 @@
-
-
 import "../scss/Meteo.scss";
 
 function Meteo({icon, name, temperature, ressenti, description , vent }) {
