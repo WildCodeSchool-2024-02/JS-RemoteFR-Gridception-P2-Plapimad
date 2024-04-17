@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+}
+
 .global-div {
   background-image: url("https://media.discordapp.net/attachments/1227895178271133777/1227908263467683911/place_plumereau_ville_tours_credit_adt_touraine_jcoutand_2029.jpg?ex=662a1daf&is=6617a8af&hm=b0c5d268c500342ffbfe04e245667263714e1dc0fedaefc3264e5f289234c5c5&=&format=webp&width=1006&height=671");
   background-size: cover;
@@ -23,10 +27,11 @@
 
 .ul_nav_bar {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  gap: 5rem;
 }
 
 .ul_nav_bar a {
@@ -52,15 +57,36 @@
 }
 .France_map {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  height: 45%;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 15rem 0 10rem 3rem;
 }
 
 #France {
-  width: 100%;
+  display: flex;
 }
 
 #logo_Plapimad {
   width: 25%;
+}
+
+// responsive nav
+
+@media screen and (min-width: 700px) {
+  .global-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40rem;
+  }
+  .ul_nav_bar {
+    gap: 3rem;
+    margin: 1rem;
+  }
+  .principal_title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 18rem;
+  }
 }
