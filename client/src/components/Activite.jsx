@@ -8,25 +8,25 @@ function Activite() {
   // Fonction pour convertir la vitesse du vent (passer de m/s à km/h)
 
   function convertWindData(dataMeterPerSecond) {
-    let dataKilometerPerHour = (dataMeterPerSecond / 1000) * 3600;
+    const dataKilometerPerHour = (dataMeterPerSecond / 1000) * 3600;
     return Math.floor(dataKilometerPerHour);
   }
 
-  // Fonction pour remplacer les données brutes (en km/h) du vents par des mots qui traduisent la force du vent
+  // Fonction pour remplacer les données brutes (en km/h) du vent par des mots qui traduisent la force du vent
   function windStrength(dataWind) {
     if (dataWind <= 9) {
       return "Vent léger";
     }
-    if (dataWind <= 40) {
+    else if (dataWind <= 40) {
       return "Vent modéré";
     }
-    if (dataWind <= 60) {
+   else if (dataWind <= 60) {
       return "Vent fort";
     }
-    if (dataWind <= 90) {
+    else if (dataWind <= 90) {
       return "Vent violent";
     }
-    if (dataWind > 90) {
+    else if (dataWind > 90) {
       return "Tempête";
     }
   }
