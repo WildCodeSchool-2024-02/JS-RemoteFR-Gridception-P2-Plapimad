@@ -2,6 +2,11 @@ import resto1 from "../assets/images/LOpidom.jpg";
 import resto2 from "../assets/images/levidence.webp";
 import resto3 from "../assets/images/Arboreetsens.jpg";
 import resto4 from "../assets/images/chateaupray.jpg";
+import resto5 from "../assets/images/PomPoire.jpg";
+import resto6 from "../assets/images/vincent.jpeg";
+import resto7 from "../assets/images/laboureur.jpg";
+import resto8 from "../assets/images/hautesroches.jpeg";
+
 import "../scss/Restaurant.scss";
 
 const restoListe = [
@@ -26,33 +31,34 @@ const restoListe = [
     image: <img src={resto4} alt="chateau de pray" />,
   },
   {
-    nom: "Château de Pray",
-    adresse: "rue du Cèdre, à Chargé, Amboise, 37530, France",
-    image: <img src={resto4} alt="chateau de pray" />,
+    nom: "l’Auberge Pom’Poire",
+    adresse: "21 Rte de Valleres, 37190 Azay-le-Rideau",
+    image: <img src={resto5} alt="l’Auberge Pom’Poire" />,
   },
   {
-    nom: "Château de Pray",
-    adresse: "rue du Cèdre, à Chargé, Amboise, 37530, France",
-    image: <img src={resto4} alt="chateau de pray" />,
+    nom: "Vincent cuisinier de campagne",
+    adresse: "19 Rue de la Galottière, 37140 Coteaux-sur-Loire",
+    image: <img src={resto6} alt="Vincent cuisinier de campagne" />,
   },
   {
-    nom: "Château de Pray",
-    adresse: "rue du Cèdre, à Chargé, Amboise, 37530, France",
-    image: <img src={resto4} alt="chateau de pray" />,
+    nom: "Auberge du Bon Laboureur",
+    adresse: "6 Rue Bretonneau, 37150 Chenonceaux",
+    image: <img src={resto7} alt="Auberge du Bon Laboureur" />,
   },
   {
-    nom: "Château de Pray",
-    adresse: "rue du Cèdre, à Chargé, Amboise, 37530, France",
-    image: <img src={resto4} alt="chateau de pray" />,
+    nom: "Les Hautes Roches",
+    adresse: "86 quai de la Loire 37210 ROCHECORBON",
+    image: <img src={resto8} alt="chateau de pray" />,
   },
 ];
 
+function restaurantRandom(restaurants) {
+  const randomIndex = Math.floor(Math.random() * restaurants.length);
+  return restaurants[randomIndex];
+}
+
 function Restaurants() {
-  /*const restoRandom = restoListe.map((resto, Math.ramdom) => {
-    Math.ramdom()
-    return restoRandom;
-  });
-  console.info(restoRandom);*/
+  const randomRestaurant = restaurantRandom(restoListe);
 
   return (
     <div className="culinaire-container">
@@ -65,13 +71,9 @@ function Restaurants() {
       </p>
       <div>
         <div>
-          {restoListe.map((resto, index) => (
-            <>
-              <div key={resto.nom}>{resto.nom}</div>
-              <div key={resto.nom}>{resto.image}</div>
-              <div key={resto.nom}>{resto.adresse}</div>
-            </>
-          ))}
+          <h4>{randomRestaurant.nom}</h4>
+          <div>{randomRestaurant.image}</div>
+          <p>{randomRestaurant.adresse}</p>
         </div>
       </div>
     </div>
