@@ -50,20 +50,16 @@ function Accueil() {
 
         <ul className="ul_nav_bar">
           <li>
-            <a href="">Activités</a>
+            <a href="#activite-container">Activités</a>
           </li>
           <li>
-            <a href="">Contact</a>
+            <a href="#backgroundimage">Contact</a>
           </li>
         </ul>
       </div>
       <div className="principal_title">
         <h1>AventuresAtmo</h1>
         <p>"Chaque prévision est une opportunité à Tours"</p>
-      </div>
-
-      <div className="France_map">
-        <img id="France" src={carte_France} alt="carte de la France" />
       </div>
     </div>
   );

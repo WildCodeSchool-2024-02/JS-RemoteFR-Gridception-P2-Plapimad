@@ -1,33 +1,36 @@
+import { useState } from "react";
+import { useEffect } from "react";
+import axios from "axios";
 import Culinaire from "./Culinaire";
 import Lieu from "./Lieu";
 import Meteo from "./Meteo";
-import { useState } from "react";
-import { useEffect} from "react";
-import axios from "axios";
 
 function Activite() {
+  // Fonction pour convertir la vitesse du vent (passer de m/s à km/h)
 
-    // Fonction pour convertir la vitesse du vent (passer de m/s à km/h)
+  function convertWindData(dataMeterPerSecond) {
+    let dataKilometerPerHour = (dataMeterPerSecond / 1000) * 3600;
+    return Math.floor(dataKilometerPerHour);
+  }
 
-    function convertWindData(dataMeterPerSecond) {
-      let dataKilometerPerHour = (dataMeterPerSecond / 1000) * 3600;
-      return Math.floor(dataKilometerPerHour);
+  // Fonction pour remplacer les données brutes (en km/h) du vents par des mots qui traduisent la force du vent
+  function windStrength(dataWind) {
+    if (dataWind <= 9) {
+      return "Vent léger";
     }
-  
-    // Fonction pour remplacer les données brutes (en km/h) du vents par des mots qui traduisent la force du vent
-    function windStrength(dataWind) {
-      if (dataWind <= 9) {
-        return "Vent léger";
-      } else if (dataWind <= 40) {
-        return "Vent modéré";
-      } else if (dataWind <= 60) {
-        return "Vent fort";
-      } else if (dataWind <= 90) {
-        return "Vent violent";
-      } else if (dataWind > 90) {
-        return "Tempête";
-      }
+    if (dataWind <= 40) {
+      return "Vent modéré";
     }
+    if (dataWind <= 60) {
+      return "Vent fort";
+    }
+    if (dataWind <= 90) {
+      return "Vent violent";
+    }
+    if (dataWind > 90) {
+      return "Tempête";
+    }
+  }
 
   const [datas, setDatas] = useState({});
 
@@ -45,28 +48,25 @@ function Activite() {
       .catch((err) => console.info(err));
   }, []);
 
-  
   return (
-    <div className="activite-container">
+    <div className="activite-container" id="activite-container">
       <h1>Qu'allons nous faire aujourd'hui ?</h1>
 
-      <Meteo 
-      icon = {datas?.weather?.[0]?.icon}
-      name = {datas?.name}
-      temperature = {Math.floor(datas?.main?.temp)}
-      ressenti = {Math.floor(datas?.main?.feels_like)}
-      description = {datas?.weather?.[0]?.description}
-      vent = {windStrength(convertWindData(datas?.wind?.speed))}
+      <Meteo
+        icon={datas?.weather?.[0]?.icon}
+        name={datas?.name}
+        temperature={Math.floor(datas?.main?.temp)}
+        ressenti={Math.floor(datas?.main?.feels_like)}
+        description={datas?.weather?.[0]?.description}
+        vent={windStrength(convertWindData(datas?.wind?.speed))}
       />
 
-      <Lieu activites={activitesListe}
-       icon = {datas?.weather?.[0]?.icon}/>
+      <Lieu activites={activitesListe} icon={datas?.weather?.[0]?.icon} />
 
       <Culinaire />
     </div>
   );
 }
-
 
 const activitesListe = [
   {
@@ -115,7 +115,7 @@ const activitesListe = [
     Lien: "https://www.chateauvillandry.fr/",
     Image:
       "https://i.pinimg.com/originals/35/a0/75/35a075cec6d5d438beffdf9c7fdbad2a.jpg",
-      Météo : "Soleil",
+    Météo: "Soleil",
   },
   {
     Name: "Quizz Room",
@@ -123,7 +123,7 @@ const activitesListe = [
     Lien: "https://www.quiz-room.com/villes/tours",
     Image:
       "https://tse1.mm.bing.net/th?id=OIP.PN5iaKNSnXTwtA-JpVluxAHaE8&pid=Api",
-      Météo : "Pluie",
+    Météo: "Pluie",
   },
   {
     Name: "Vol en montgolfière à Chenonceau",
@@ -131,7 +131,7 @@ const activitesListe = [
     Lien: "https://www.funbooker.com/fr/annonce/vol-en-montgolfiere-au-dessus-de-chenonceau/voir?ae=187&utm_source=affilae&utm_medium=terretv&aecid=661e8110fc13cfc2330edb76",
     Image:
       "https://www.art-montgolfieres.fr/img/cms/chenonceau/montgolfiere-chenonceau-6.jpg",
-      Météo : "Soleil",
+    Météo: "Soleil",
   },
   {
     Name: "Muséum d'Histoire naturelle",
@@ -139,7 +139,7 @@ const activitesListe = [
     Lien: "https://www.museum.tours.fr/le-musee/",
     Image:
       "https://leprog.com/sites/leprog/files/styles/16x9_1920/public/Organisateurs/illustrations/MUS%C3%89UM%20D_HISTOIRE%20NATURELLE%20DE%20TOURS.png?h=b3e6f3e9&itok=zy4ZxfOr",
-      Météo : "Pluie",
+    Météo: "Pluie",
   },
   {
     Name: "Aquarium de Touraine",
@@ -147,7 +147,7 @@ const activitesListe = [
     Lien: "https://www.aquariumdetouraine.com/",
     Image:
       "https://reservation.tours-tourisme.fr/medias/images/prestations/aquarium-de-touraine-23647-23892-39991.jpg",
-      Météo : "Pluie",
+    Météo: "Pluie",
   },
 ];
 

@@ -7,8 +7,6 @@ import resto6 from "../assets/images/vincent.jpeg";
 import resto7 from "../assets/images/laboureur.jpg";
 import resto8 from "../assets/images/hautesroches.jpeg";
 
-import "../scss/Restaurant.scss";
-
 const restoListe = [
   {
     nom: "L'Opidom",
@@ -61,19 +59,20 @@ function Restaurants() {
   const randomRestaurant = restaurantRandom(restoListe);
 
   return (
-    <div className="culinaire-container">
+    <div>
       <h2>Les bons plans culinaires</h2>
-      <p>
-        Que vous soyez de passage sur Tours ou Tourangeaux bien établis, vous
-        trouverez ci-dessous nos bons plans culinaires. N’hésitez pas à nous
-        faire vos retours sur les endroits que nous avons sélectionnés pour vous
-        !
+      <p className="p-culinaire">
+        Si vous êtes de passage sur Tours ou Tourangeaux, vous trouverez
+        ci-dessous nos bons plans culinaires. N’hésitez pas à nous faire vos
+        retours sur les endroits que nous avons sélectionnés pour vous !
       </p>
-      <div>
+      <div className="culinaire-container">
         <div>
-          <h4>{randomRestaurant.nom}</h4>
-          <div>{randomRestaurant.image}</div>
-          <p>{randomRestaurant.adresse}</p>
+          <div>
+            <h3>{randomRestaurant.nom}</h3>
+            <div>{randomRestaurant.image}</div>
+            <p>{randomRestaurant.adresse}</p>
+          </div>
         </div>
       </div>
     </div>

@@ -28,6 +28,10 @@
   color: #fff;
 }
 
+.carousel.carousel-slider {
+  margin: 5rem;
+}
+
 .carousel .overlay_title {
   text-align: center;
 }
@@ -40,68 +44,59 @@
   width: 80%;
   text-decoration: none;
   border-radius: 40px 0 40px 0;
-  a{
+  a {
     color: white;
   }
 }
 
 // Etape 1 : Pour faire disparaître le caroussel en version desktop
-@media screen and (width <= 500px){
-  .div_caroussel{
+@media screen and (width <= 900px) {
+  .div_caroussel {
     display: block;
   }
-  .div_desktop{
-    display : none;
+  .div_desktop {
+    display: none;
   }
 }
 
 // Etape 2 : Pour faire disparaître le caroussel en version desktop
 
-
-@media screen and (width >= 500px){
-  .div_caroussel{
+@media screen and (width >= 900px) {
+  .div_caroussel {
     display: none;
   }
-  .div_desktop{
-    display : block;
+  .div_desktop {
+    display: block;
   }
 
   //SCSS de la version Desktop
 
-.div_desktop{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  .div_desktop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .lieu_all_components {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    max-width: min-content;
+    border: 1px solid skyblue;
+    border-radius: 0 0 1rem 1rem;
+  }
 
+  .lieu_all_components:hover {
+    background-color: skyblue;
+    transform: scale(1.1);
+  }
 
+  .lieu_image {
+    width: 20vw;
+    height: 30vh;
+    object-fit: cover;
+  }
+
+  .lieu_title_text {
+    text-align: center;
+  }
 }
-.lieu_all_components{
-  margin : 1rem;
-  display: flex;
-  flex-direction: column;
-  max-width: min-content;
-  border: 1px solid skyblue;
-  border-radius: 0 0  1rem 1rem;
-}
-
-.lieu_all_components:hover{
-background-color: skyblue;
-transform: scale(1.1);
-}
-
-.lieu_image{
-  width: 20vw;
-  height: 30vh;
-  object-fit: cover;
-}
-
-
-.lieu_title_text{
-  text-align: center;
-}
-
-}
-
-
-
-

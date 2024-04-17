@@ -1,66 +1,62 @@
+.backgroundimage {
+  background-image: url("https://perspectives-de-voyage.com/wp-content/uploads/2021/12/visiter-tours-01359.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-.backgroundimage{
-    
-    
-    background-image: url("https://perspectives-de-voyage.com/wp-content/uploads/2021/12/visiter-tours-01359.jpg");    
-    background-size: cover;
-    width: 100%;
-    height: 50vh;
-    display: flex;    
-    justify-content: center;   
-    align-items: center;
-}
-h1{
-    font-size:6vw;
+  .Title-form {
     color: white;
+  }
 }
-form{
-   
-    display: flex;
-    justify-content: center;
-    background-color: rgb(173,216,230)
-    ;
-     margin-left: 5%;
-     margin-right: 5%;
-    
-    margin-top: 3.5rem;
-    @media screen and (min-width:767px){
-        margin-left: 30%;
-        margin-right: 30%;
-    }
-     @media screen and (min-width:1009px){
-         margin-left: 30%;
-         margin-right: 30%;
-        
-     }
-     border-radius: 5%;
-}
-.contact-ul{
-    list-style-type:none;
-    display: flex;
-    flex-direction: column;
-    row-gap: 2rem;
-    width: 100%;
-    margin-right: 3rem;
-    
-}
-input{
-    width: 100%;
-    background-color: white;
-    border: none;
-}
-textarea{
-    width: 100%;
-    font-family: Arial;
-    border: none;
-    
-}
-.button{
-        background-color: orangered;
-        width: 10rem;
-        height:3rem ;  
-        color: white;  
-        
 
+form {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(173, 216, 230);
+  margin-left: 5%;
+  margin-right: 5%;
+
+  margin-top: 3.5rem;
+  @media screen and (min-width: 767px) {
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+  @media screen and (min-width: 1009px) {
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+  border-radius: 40px 0 40px 0;
 }
-    
+.contact-ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  width: 100%;
+  margin-right: 3rem;
+}
+input {
+  width: 100%;
+  background-color: white;
+  border: none;
+}
+textarea {
+  width: 100%;
+  font-family: Arial;
+  border: none;
+}
+.button {
+  background-color: orangered;
+  width: 10rem;
+  height: 3rem;
+  color: white;
+  border-radius: 20px 0 20px 0;
+}
+
+.button-li {
+  display: flex;
+  justify-content: center;
+}
