@@ -7,6 +7,28 @@ import axios from "axios";
 
 function Activite() {
 
+    // Fonction pour convertir la vitesse du vent (passer de m/s à km/h)
+
+    function convertWindData(dataMeterPerSecond) {
+      let dataKilometerPerHour = (dataMeterPerSecond / 1000) * 3600;
+      return Math.floor(dataKilometerPerHour);
+    }
+  
+    // Fonction pour remplacer les données brutes (en km/h) du vents par des mots qui traduisent la force du vent
+    function windStrength(dataWind) {
+      if (dataWind <= 9) {
+        return "Vent léger";
+      } else if (dataWind <= 40) {
+        return "Vent modéré";
+      } else if (dataWind <= 60) {
+        return "Vent fort";
+      } else if (dataWind <= 90) {
+        return "Vent violent";
+      } else if (dataWind > 90) {
+        return "Tempête";
+      }
+    }
+
   const [datas, setDatas] = useState({});
 
   const API_KEY = import.meta.env.VITE_API_KEY;
@@ -31,10 +53,10 @@ function Activite() {
       <Meteo 
       icon = {datas?.weather?.[0]?.icon}
       name = {datas?.name}
-      temperature = {datas?.main?.temp}
-      ressenti = {datas?.main?.feels_like}
+      temperature = {Math.floor(datas?.main?.temp)}
+      ressenti = {Math.floor(datas?.main?.feels_like)}
       description = {datas?.weather?.[0]?.description}
-      vent = {datas?.wind?.speed}
+      vent = {windStrength(convertWindData(datas?.wind?.speed))}
       />
 
       <Lieu activites={activitesListe}
@@ -72,7 +94,7 @@ const activitesListe = [
     Météo: "Soleil",
   },
   {
-    Name: "Rue Natioanale de Tours",
+    Name: "Rue Nationale de Tours",
     Description: "Un moment shopping en ville.",
     Lien: "https://www.tripadvisor.fr/Attraction_Review-g187130-d246693-Reviews-Rue_Nationale-Tours_Indre_et_Loire_Centre_Val_de_Loire.html",
     Image:

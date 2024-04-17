@@ -22,7 +22,7 @@ function Meteo({icon, name, temperature, ressenti, description , vent }) {
         )}
         <div className="icon-description">
           <p>{description}</p>
-          <p>💨 {vent} m/s</p>
+          <p>💨 {vent}</p>
         </div>
       </div>
     </div>
