@@ -6,8 +6,8 @@ function Contact () {
         <div>
           <section className="backgroundimage"><h1>Une idée à suggérer? </h1></section>
           
-        <form action="mon-formulaire" method="get">
-        <ul>
+        <form  >
+        <ul className= "contact-ul">
     <li>
       <label className="lastname"></label>
       <input placeholder="Nom*"  />
