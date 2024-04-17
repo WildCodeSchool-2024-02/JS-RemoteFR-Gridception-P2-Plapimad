@@ -1,12 +1,107 @@
+.title-Lieu {
+  text-align: center;
+}
+
 .lieu-container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
   margin: 0 1rem 0 1rem;
+
   img {
-    width: 10rem;
+    width: 414px;
     height: auto;
     box-shadow: 5px 5px 5px gray;
   }
 }
+
+.carousel .overlay {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0.5rem;
+  margin-right: 10%;
+  margin-left: 10%;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+
+.carousel .overlay_title {
+  text-align: center;
+}
+
+.carousel .overlay_text {
+  text-align: center;
+}
+
+.overlay {
+  width: 80%;
+  text-decoration: none;
+  border-radius: 40px 0 40px 0;
+  a{
+    color: white;
+  }
+}
+
+// Etape 1 : Pour faire disparaître le caroussel en version desktop
+@media screen and (width <= 500px){
+  .div_caroussel{
+    display: block;
+  }
+  .div_desktop{
+    display : none;
+  }
+}
+
+// Etape 2 : Pour faire disparaître le caroussel en version desktop
+
+
+@media screen and (width >= 500px){
+  .div_caroussel{
+    display: none;
+  }
+  .div_desktop{
+    display : block;
+  }
+
+  //SCSS de la version Desktop
+
+.div_desktop{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+}
+.lieu_all_components{
+  margin : 1rem;
+  display: flex;
+  flex-direction: column;
+  max-width: min-content;
+  border: 1px solid skyblue;
+  border-radius: 0 0  1rem 1rem;
+}
+
+.lieu_all_components:hover{
+background-color: skyblue;
+transform: scale(1.1);
+}
+
+.lieu_image{
+  width: 20vw;
+  height: 30vh;
+  object-fit: cover;
+}
+
+
+.lieu_title_text{
+  text-align: center;
+}
+
+}
+
+
+
+
