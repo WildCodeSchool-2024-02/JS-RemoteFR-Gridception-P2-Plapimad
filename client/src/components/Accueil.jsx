@@ -1,17 +1,16 @@
 import "../scss/accueil.scss";
-import logo_GitHub from "../assets/images/logo_GitHub.png";
-import carte_France from "../assets/images/carte_France3.png";
-import logo_twitter from "../assets/images/logo_twitter.png";
-import Logo_Plapimad from "../assets/images/Logo_PLapimad3.png";
-import logo_instagram from "../assets/images/logo_instagram.png";
-import logo_pinterest from "../assets/images/logo_pinterest.png";
+import logoGitHub from "../assets/images/logoGitHub.png";
+import logoTwitter from "../assets/images/logoTwitter.png";
+import logoPlapimad from "../assets/images/logoPlapimad3.png";
+import logoInstagram from "../assets/images/logoInstagram.png";
+import logoPinterest from "../assets/images/logoPinterest.png";
 
 function Accueil() {
   return (
     <div className="global-div">
       <div className="global-bar">
         <div className="logos_bar">
-          <img id="logo_Plapimad" src={Logo_Plapimad} alt="Logo Plapimad" />
+          <img id="logo_Plapimad" src={logoPlapimad} alt="Logo Plapimad" />
 
           <div className="logos">
             <a
@@ -20,28 +19,28 @@ function Accueil() {
             >
               <img
                 className="img_accueil"
-                src={logo_GitHub}
+                src={logoGitHub}
                 alt="Logo GitHub"
               />
             </a>
             <a target="blank" href="https://twitter.com/?lang=fr">
               <img
                 className="img_accueil"
-                src={logo_twitter}
+                src={logoTwitter}
                 alt="Logo Tweeter"
               />
             </a>
             <a target="blank" href="https://www.instagram.com/">
               <img
                 className="img_accueil"
-                src={logo_instagram}
+                src={logoInstagram}
                 alt="Logo Instagram"
               />
             </a>
             <a target="blank" href="https://www.pinterest.fr/">
               <img
                 className="img_accueil"
-                src={logo_pinterest}
+                src={logoPinterest}
                 alt="Logo pinterest"
               />
             </a>
