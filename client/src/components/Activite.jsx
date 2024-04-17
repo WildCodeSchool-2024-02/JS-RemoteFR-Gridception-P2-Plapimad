@@ -28,6 +28,8 @@ function Activite() {
     }
     else if (dataWind > 90) {
       return "Tempête";
+    }else {
+      return "Erreur"
     }
   }
 
