@@ -1,6 +1,6 @@
 import "../scss/accueil.scss";
 import logo_GitHub from "../assets/images/logo_GitHub.png";
-import carte_France from "../assets/images/carte_France3.png";
+
 import logo_twitter from "../assets/images/logo_twitter.png";
 import Logo_Plapimad from "../assets/images/Logo_PLapimad3.png";
 import logo_instagram from "../assets/images/logo_instagram.png";
