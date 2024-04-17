@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import Culinaire from "./Culinaire";
+import Restaurants from "./Restaurants";
 import Lieu from "./Lieu";
 import Meteo from "./Meteo";
 
@@ -62,7 +62,7 @@ function Activite() {
 
       <Lieu activites={activitesListe} icon={datas?.weather?.[0]?.icon} />
 
-      <Culinaire />
+      <Restaurants />
     </div>
   );
 }

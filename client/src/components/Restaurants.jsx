@@ -7,6 +7,8 @@ import resto6 from "../assets/images/vincent.jpeg";
 import resto7 from "../assets/images/laboureur.jpg";
 import resto8 from "../assets/images/hautesroches.jpeg";
 
+import "../scss/Restaurants.scss";
+
 const restoListe = [
   {
     nom: "L'Opidom",
