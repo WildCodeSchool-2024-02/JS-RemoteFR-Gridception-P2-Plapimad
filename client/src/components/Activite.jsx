@@ -37,7 +37,8 @@ function Activite() {
       vent = {datas?.wind?.speed}
       />
 
-      <Lieu activites={activitesListe}/>
+      <Lieu activites={activitesListe}
+       icon = {datas?.weather?.[0]?.icon}/>
 
       <Culinaire />
     </div>
