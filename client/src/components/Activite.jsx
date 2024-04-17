@@ -1,13 +1,41 @@
 import Culinaire from "./Culinaire";
 import Lieu from "./Lieu";
 import Meteo from "./Meteo";
+import { useState } from "react";
+import { useEffect} from "react";
+import axios from "axios";
 
 function Activite() {
+
+  const [datas, setDatas] = useState({});
+
+  const API_KEY = import.meta.env.VITE_API_KEY;
+
+  useEffect(() => {
+    axios
+      .get(
+        `https://api.openweathermap.org/data/2.5/weather?q=Tours&appid=${API_KEY}&units=metric&lang=fr`
+      )
+      .then((results) => {
+        setDatas(results.data);
+        console.info(results);
+      })
+      .catch((err) => console.info(err));
+  }, []);
+
+  
   return (
     <div className="activite-container">
       <h1>Qu'allons nous faire aujourd'hui ?</h1>
 
-      <Meteo />
+      <Meteo 
+      icon = {datas?.weather?.[0]?.icon}
+      name = {datas?.name}
+      temperature = {datas?.main?.temp}
+      ressenti = {datas?.main?.feels_like}
+      description = {datas?.weather?.[0]?.description}
+      vent = {datas?.wind?.speed}
+      />
 
       <Lieu activites={activitesListe}/>
 
@@ -83,19 +111,19 @@ const activitesListe = [
       Météo : "Soleil",
   },
   {
-    Name: "",
-    Description: "",
-    Lien: "",
+    Name: "Muséum d'Histoire naturelle",
+    Description: "Venez découvrir les secrets de la nature",
+    Lien: "https://www.museum.tours.fr/le-musee/",
     Image:
-      "",
+      "https://leprog.com/sites/leprog/files/styles/16x9_1920/public/Organisateurs/illustrations/MUS%C3%89UM%20D_HISTOIRE%20NATURELLE%20DE%20TOURS.png?h=b3e6f3e9&itok=zy4ZxfOr",
       Météo : "Pluie",
   },
   {
-    Name: "",
-    Description: "",
-    Lien: "",
+    Name: "Aquarium de Touraine",
+    Description: "Une immersion dans le monde des poissons",
+    Lien: "https://www.aquariumdetouraine.com/",
     Image:
-      "",
+      "https://reservation.tours-tourisme.fr/medias/images/prestations/aquarium-de-touraine-23647-23892-39991.jpg",
       Météo : "Pluie",
   },
 ];

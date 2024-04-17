@@ -43,3 +43,52 @@
     color: white;
   }
 }
+
+// Etape 1 : Pour faire disparaître le caroussel en version desktop
+@media screen and (width <= 500px){
+  .div_caroussel{
+    display: block;
+  }
+  .div_desktop{
+    display : none;
+  }
+}
+
+// Etape 2 : Pour faire disparaître le caroussel en version desktop
+
+
+@media screen and (width >= 500px){
+  .div_caroussel{
+    display: none;
+  }
+  .div_desktop{
+    display : block;
+  }
+
+  //SCSS de la version Desktop
+
+.div_desktop{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+}
+.lieu_all_components{
+  margin : 1rem;
+  display: flex;
+  flex-direction: column;
+  max-width: min-content;
+}
+
+.lieu_image{
+  width: 20vw;
+  height: 30vh;
+  object-fit: cover;
+}
+
+}
+
+
+
+
