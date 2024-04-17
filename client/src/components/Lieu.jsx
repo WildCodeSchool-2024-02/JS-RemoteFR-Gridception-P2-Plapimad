@@ -30,7 +30,6 @@ function Lieu ({activites , icon}) {
           activite.Météo === "Toujours" || activite.Météo === "Pluie"
         );
          setActivitesFiltrees(activitesMauvaisTemps);
-    
   } 
 }, [activites, icon]);
 

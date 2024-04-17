@@ -104,7 +104,7 @@ const activitesListe = [
       Météo : "Pluie",
   },
   {
-    Name: "Vol en Montgolfière au-dessus de Chenonceau",
+    Name: "Vol en montgolfière à Chenonceau",
     Description: "Moment magique et inoubliable.",
     Lien: "https://www.funbooker.com/fr/annonce/vol-en-montgolfiere-au-dessus-de-chenonceau/voir?ae=187&utm_source=affilae&utm_medium=terretv&aecid=661e8110fc13cfc2330edb76",
     Image:
