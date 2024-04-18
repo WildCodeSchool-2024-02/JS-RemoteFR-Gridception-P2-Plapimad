@@ -29,3 +29,4 @@ function Meteo({ icon, name, temperature, ressenti, description, vent }) {
   );
 }
 export default Meteo;
+
