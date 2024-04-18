@@ -17,20 +17,16 @@ function Activite() {
   function windStrength(dataWind) {
     if (dataWind <= 9) {
       return "Vent léger";
-    }
-    else if (dataWind <= 40) {
+    } else if (dataWind <= 40) {
       return "Vent modéré";
-    }
-   else if (dataWind <= 60) {
+    } else if (dataWind <= 60) {
       return "Vent fort";
-    }
-    else if (dataWind <= 90) {
+    } else if (dataWind <= 90) {
       return "Vent violent";
-    }
-    else if (dataWind > 90) {
+    } else if (dataWind > 90) {
       return "Tempête";
-    }else {
-      return "Erreur"
+    } else {
+      return "Erreur";
     }
   }
 
@@ -70,6 +66,4 @@ function Activite() {
   );
 }
 
-
 export default Activite;
-
