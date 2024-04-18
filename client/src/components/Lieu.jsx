@@ -2,28 +2,25 @@ import "../scss/Lieu.scss";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { useEffect, useState } from "react";
+import PropTypes from "prop-types";
 
 function Lieu({ activites, icon }) {
-  // State pour stocker les activités filtrées
   const [activitesFiltrees, setActivitesFiltrees] = useState([]);
-
-  // Effet pour filtrer les activités lorsque les données météo sont mises à jour
   useEffect(() => {
-    // Filtrer les activités en fonction des icônes météorologiques
     const iconsMeteoBeauTemps = ["01d", "02d", "03d", "04d"];
     const iconsMeteoMauvaisTemps = ["09d", "10d", "11d", "13d", "50d"];
 
     if (iconsMeteoBeauTemps.includes(icon)) {
       const activitesBeauTemps = activites.filter(
         (activite) =>
-          activite.Météo === "Toujours" || activite.Météo === "Soleil"
+          activite.meteo === "Toujours" || activite.meteo === "Soleil"
       );
 
       setActivitesFiltrees(activitesBeauTemps);
     } else if (iconsMeteoMauvaisTemps.includes(icon)) {
       const activitesMauvaisTemps = activites.filter(
         (activite) =>
-          activite.Météo === "Toujours" || activite.Météo === "Pluie"
+          activite.meteo === "Toujours" || activite.meteo === "Pluie"
       );
       setActivitesFiltrees(activitesMauvaisTemps);
     }
@@ -35,14 +32,14 @@ function Lieu({ activites, icon }) {
       <div className="div_caroussel">
         <Carousel>
           {activitesFiltrees.map((slide) => (
-            <div key={slide.Name}>
-              <img src={slide.Image} alt={slide.Name} />
+            <div key={slide.name}>
+              <img src={slide.image} alt={slide.name} />
               <div className="overlay">
-                <a href={slide.Lien} target="_blank" rel="noreferrer">
+                <a href={slide.lien} target="_blank" rel="noreferrer">
                   {" "}
-                  <h2 className="overlay_title">{slide.Name}</h2>
+                  <h2 className="overlay_title">{slide.name}</h2>
                 </a>
-                <p className="overlay_text">{slide.Description}</p>
+                <p className="overlay_text">{slide.description}</p>
               </div>
             </div>
           ))}
@@ -51,13 +48,13 @@ function Lieu({ activites, icon }) {
 
       <div className="div_desktop">
         {activitesFiltrees.map((slide) => (
-          <div className="lieu_all_components" key={slide.Name}>
-            <a href={slide.Lien} target="_blank" rel="noreferrer">
-              <img className="lieu_image" src={slide.Image} alt={slide.Name} />
+          <div className="lieu_all_components" key={slide.name}>
+            <a href={slide.lien} target="_blank" rel="noreferrer">
+              <img className="lieu_image" src={slide.image} alt={slide.name} />
             </a>
             <div className="lieu_title_text">
-              <h2 className="lieu_title">{slide.Name}</h2>
-              <p className="lieu_text">{slide.Description}</p>
+              <h2 className="lieu_title">{slide.name}</h2>
+              <p className="lieu_text">{slide.description}</p>
             </div>
           </div>
         ))}
@@ -66,4 +63,17 @@ function Lieu({ activites, icon }) {
   );
 }
 
+Lieu.propTypes = {
+  activites: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+      lien: PropTypes.string.isRequired,
+      image: PropTypes.string.isRequired,
+      meteo: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+
+  icon: PropTypes.string,
+};
 export default Lieu;
