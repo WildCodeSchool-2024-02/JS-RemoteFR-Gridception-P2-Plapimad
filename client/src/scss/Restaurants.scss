@@ -1,0 +1,31 @@
+.culinaire-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-radius: 40px 0 40px 0;
+  border: 1px solid skyblue;
+  max-width: min-content;
+  margin: 2rem 0rem 2rem 5rem;
+}
+.p-culinaire {
+  text-align: justify;
+  padding: 0 10px 0 10px;
+}
+@media screen and (width >= 500px) {
+  .culinaire-container:hover {
+    background-color: skyblue;
+    transform: scale(1.1);
+  }
+}
+img {
+  width: 25rem;
+  height: auto;
+  border: 1px solid skyblue;
+}
+
+@media screen and (width >= 900px) {
+  .culinaire-container {
+    border: 1px solid skyblue;
+    max-width: min-content;
+  }
+}

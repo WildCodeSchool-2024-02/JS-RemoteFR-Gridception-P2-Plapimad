@@ -10,8 +10,8 @@ function Meteo({ icon, name, temperature, ressenti, description, vent }) {
         </div>
         <div className="box-globale">
           <div className="box-temp">
-            <p>Température: {temperature}°</p>
-            <p>Ressenti: {ressenti}°</p>
+            <p>Température: {temperature}°C</p>
+            <p>Ressenti: {ressenti}°C</p>
           </div>
           {icon && (
             <img
@@ -29,3 +29,4 @@ function Meteo({ icon, name, temperature, ressenti, description, vent }) {
   );
 }
 export default Meteo;
+

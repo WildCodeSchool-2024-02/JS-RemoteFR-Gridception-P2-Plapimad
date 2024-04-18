@@ -10,26 +10,26 @@ function Contact() {
       <form>
         <ul className="contact-ul">
           <li>
-            <label className="form-lastname"></label>
+            <label className="form-lastname"/>
             <input placeholder="Nom*" />
           </li>
           <li>
-            <label className="form-name"></label>
+            <label className="form-name"/>
             <input placeholder="Prénom*" />
           </li>
           <li>
-            <label className="form-mail"></label>
+            <label className="form-mail"/>
             <input placeholder="Mail*" />
           </li>
           <li>
-            <label className="form-message"></label>
+            <label className="form-message"/>
             <textarea
               placeholder="Message*"
               name="messagearea"
               id="messagearea"
               cols="30"
               rows="10"
-            ></textarea>
+           />
           </li>
           <li className="button-li">
             <input
