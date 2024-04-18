@@ -8,7 +8,7 @@ import logoPinterest from "../assets/images/logoPinterest.png";
 function Accueil() {
   return (
     <div className="global-div">
-      <div className="global-bar">
+      <div className="div_nav_bar">
         <div className="logos_bar">
           <img id="logo_Plapimad" src={logoPlapimad} alt="Logo Plapimad" />
 
@@ -17,11 +17,7 @@ function Accueil() {
               target="blank"
               href="https://github.com/WildCodeSchool-2024-02/JS-RemoteFR-Gridception-P2-Plapimad"
             >
-              <img
-                className="img_accueil"
-                src={logoGitHub}
-                alt="Logo GitHub"
-              />
+              <img className="img_accueil" src={logoGitHub} alt="Logo GitHub" />
             </a>
             <a target="blank" href="https://twitter.com/?lang=fr">
               <img
@@ -56,6 +52,7 @@ function Accueil() {
           </li>
         </ul>
       </div>
+
       <div className="principal_title">
         <h1>AventuresAtmo</h1>
         <p>"Chaque prévision est une opportunité à Tours"</p>
