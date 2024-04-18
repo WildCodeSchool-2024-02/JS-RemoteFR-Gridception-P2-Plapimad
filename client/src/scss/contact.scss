@@ -3,26 +3,24 @@
   background-image: url("https://perspectives-de-voyage.com/wp-content/uploads/2021/12/visiter-tours-01359.jpg");
   background-size: cover;
   width: 100%;
-  height: 60vh;  
+  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  h1{
-    color: white;
-  }
-@media screen and (min-height: 798px ){
-  height: 100vh;
-}
-@media screen and (width >= 900px) {
   h1 {
     color: white;
-    font-size: 5rem;
-     }
+  }
+  @media screen and (min-height: 798px) {
+    height: 100vh;
+  }
+  @media screen and (width >= 900px) {
+    h1 {
+      color: white;
+      font-size: 5rem;
+    }
+  }
 }
-}
-  
-
 
 form {
   margin-bottom: 4rem;
