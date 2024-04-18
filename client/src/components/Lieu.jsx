@@ -73,6 +73,6 @@ Lieu.propTypes = {
     })
   ).isRequired,
 
-  icon: PropTypes.string,
+  icon: PropTypes.string.isRequired,
 };
 export default Lieu;
