@@ -3,7 +3,7 @@ import axios from "axios";
 import Restaurants from "./Restaurants";
 import Lieu from "./Lieu";
 import Meteo from "./Meteo";
-import activitesListe from "../js/activite.js";
+import activitesListe from "../js/activite";
 
 function Activite() {
   // Fonction pour convertir la vitesse du vent (passer de m/s à km/h)
@@ -17,17 +17,20 @@ function Activite() {
   function windStrength(dataWind) {
     if (dataWind <= 9) {
       return "Vent léger";
-    } else if (dataWind <= 40) {
-      return "Vent modéré";
-    } else if (dataWind <= 60) {
-      return "Vent fort";
-    } else if (dataWind <= 90) {
-      return "Vent violent";
-    } else if (dataWind > 90) {
-      return "Tempête";
-    } else {
-      return "Erreur";
     }
+    if (dataWind <= 40) {
+      return "Vent modéré";
+    }
+    if (dataWind <= 60) {
+      return "Vent fort";
+    }
+    if (dataWind <= 90) {
+      return "Vent violent";
+    }
+    if (dataWind > 90) {
+      return "Tempête";
+    }
+    return "Erreur";
   }
 
   const [datas, setDatas] = useState({});
@@ -44,7 +47,7 @@ function Activite() {
         console.info(results);
       })
       .catch((err) => console.info(err));
-  }, []);
+  }, [API_KEY]);
 
   return (
     <div className="activite-container" id="activite-container">
