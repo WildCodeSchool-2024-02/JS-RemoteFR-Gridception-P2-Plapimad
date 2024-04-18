@@ -8,13 +8,14 @@ function Contact() {
       </section>
 
       <form>
-        <input placeholder="Nom*" />
+        <input className="nom-container" placeholder="Nom*" />
 
         <input placeholder="Prénom*" />
 
-        <input placeholder="Mail*" />
+        <input className="mail-container" placeholder="Mail*" />
 
         <textarea
+          className="textarea-container"
           placeholder="Message*"
           name="messagearea"
           id="messagearea"

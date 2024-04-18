@@ -23,14 +23,16 @@
 }
 
 form {
-  margin-bottom: 4rem;
+  /*margin-bottom: 4rem;
   display: flex;
   justify-content: center;
   background-color: rgb(173, 216, 230);
   margin-left: 5%;
-  margin-right: 5%;
+  margin-right: 5%;*/
+  background-color: skyblue;
+  padding: 1rem;
+  margin: 3rem;
 
-  margin-top: 5rem;
   @media screen and (min-width: 767px) {
     margin-left: 30%;
     margin-right: 30%;
@@ -65,9 +67,9 @@ textarea {
   height: 3rem;
   color: white;
   border-radius: 20px 0 20px 0;
+  margin-left: 50px;
 }
 
-.button-li {
-  display: flex;
-  justify-content: center;
+.textarea-container {
+  margin: 4px 0 0 0;
 }
