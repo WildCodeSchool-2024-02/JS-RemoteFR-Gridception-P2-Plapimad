@@ -76,3 +76,4 @@ Lieu.propTypes = {
   icon: PropTypes.string,
 };
 export default Lieu;
+
