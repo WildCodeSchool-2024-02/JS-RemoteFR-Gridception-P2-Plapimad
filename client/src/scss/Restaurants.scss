@@ -1,8 +1,11 @@
 .culinaire-container {
+  display: flex;
+  justify-content: center;
   text-align: center;
-  margin: 1rem;
-  border: 1px solid skyblue;
   border-radius: 40px 0 40px 0;
+  border: 1px solid skyblue;
+  max-width: min-content;
+  margin: 2rem 0rem 2rem 5rem;
 }
 .p-culinaire {
   text-align: justify;
@@ -15,6 +18,14 @@
   }
 }
 img {
-  width: 15rem;
+  width: 25rem;
   height: auto;
+  border: 1px solid skyblue;
+}
+
+@media screen and (width >= 900px) {
+  .culinaire-container {
+    border: 1px solid skyblue;
+    max-width: min-content;
+  }
 }

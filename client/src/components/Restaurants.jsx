@@ -61,7 +61,7 @@ function Restaurants() {
   const randomRestaurant = restaurantRandom(restoListe);
 
   return (
-    <div>
+    <div className="culinaire-global">
       <h2>Les bons plans culinaires</h2>
       <p className="p-culinaire">
         Si vous êtes de passage sur Tours ou Tourangeaux, vous trouverez
@@ -71,7 +71,7 @@ function Restaurants() {
       <div className="culinaire-container">
         <div>
           <div>
-            <h3>{randomRestaurant.nom}</h3>
+            <h2>{randomRestaurant.nom}</h2>
             <div>{randomRestaurant.image}</div>
             <p>{randomRestaurant.adresse}</p>
           </div>
