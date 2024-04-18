@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Vidaloka-Regular";
+  src: url("./font/Vidaloka-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat-VariableFont_wght";
+  src: url("./font/Montserrat-VariableFont_wght.ttf");
+}
+:root {
+  font-family: "Montserrat-VariableFont_wght";
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Vidaloka-Regular";
+    text-align: center;
+  }
+
+  .meteo-title {
+    color: white;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.25rem;
+  }
+
+  body {
+    margin: 0;
+  }
+}
