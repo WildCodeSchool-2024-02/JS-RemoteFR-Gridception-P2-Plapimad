@@ -4,6 +4,8 @@ import logoTwitter from "../assets/images/logoTwitter.png";
 import logoPlapimad from "../assets/images/logoPlapimad3.png";
 import logoInstagram from "../assets/images/logoInstagram.png";
 import logoPinterest from "../assets/images/logoPinterest.png";
+import {Link, Outlet} from "react-router-dom";
+import Equipe from "../components/Equipe";
 
 function Accueil() {
   return (
@@ -48,6 +50,9 @@ function Accueil() {
             <a href="#activite-container">Activités</a>
           </li>
           <li>
+            <Link to="Equipe">Equipe</Link>
+          </li>
+          <li>
             <a href="#backgroundimage">Contact</a>
           </li>
         </ul>
@@ -57,6 +62,9 @@ function Accueil() {
         <h1>AventuresAtmo</h1>
         <p>"Chaque prévision est une opportunité à Tours"</p>
       </div>
+      <main>
+        
+      </main>
     </div>
   );
 }
