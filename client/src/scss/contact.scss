@@ -23,38 +23,30 @@
 }
 
 form {
-  /*margin-bottom: 4rem;
-  display: flex;
-  justify-content: center;
-  background-color: rgb(173, 216, 230);
-  margin-left: 5%;
-  margin-right: 5%;*/
   background-color: skyblue;
-  padding: 1rem;
+  padding: 2rem;
   margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media screen and (min-width: 767px) {
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 20%;
+    margin-right: 20%;
   }
   @media screen and (min-width: 1009px) {
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 20%;
+    margin-right: 20%;
   }
   border-radius: 40px 0 40px 0;
 }
-.contact-ul {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  row-gap: 2rem;
-  width: 100%;
-  margin-right: 3rem;
-}
+
 input {
   width: 100%;
   background-color: white;
   border: none;
+  margin-bottom: .7rem;
+  height: 2rem;
 }
 textarea {
   width: 100%;
@@ -62,12 +54,13 @@ textarea {
   border: none;
 }
 .button {
+  margin-top: 2rem;
+  margin-bottom: 0;
   background-color: orangered;
   width: 10rem;
   height: 3rem;
   color: white;
   border-radius: 20px 0 20px 0;
-  margin-left: 50px;
 }
 
 .textarea-container {
