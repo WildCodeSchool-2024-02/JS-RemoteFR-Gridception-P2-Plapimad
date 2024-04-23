@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import AbdelDjalil from "../assets/images/AbdelDjalil.png";
-import pedro from "../assets/images/pedro.jpg";
+import AbdelDjalil from "../assets/images/AbdelDjalil.jpg";
+import Pedro from "../assets/images/pedro.jpg";
 import Maeva from "../assets/images/Maeva.jpg";
-import lauryn from "../assets/images/lauryn.png";
+import Lauryn from "../assets/images/Lauryn.jpg";
 import "../scss/equipe.scss";
 
 function Equipe() {
@@ -13,10 +13,25 @@ function Equipe() {
       </nav>
       <h1>L'équipe Plapimad</h1>
       <section className="photos_equipe">
-        <img src={pedro} alt="pedro_img" />
-        <img src={Maeva} alt="Maeva_img" />
-        <img src={AbdelDjalil} alt="AbdelDjalil_img" />
-        <img src={lauryn} alt="lauryn_img" />
+        <div className="photo_individuelle">
+          <img src={Pedro} alt="pedro_img" />
+          <p>Pierre</p>
+        </div>
+
+        <div className="photo_individuelle">
+          <img src={Maeva} alt="Maeva_img" />
+          <p>Maéva</p>
+        </div>
+
+        <div className="photo_individuelle">
+          <img src={AbdelDjalil} alt="AbdelDjalil_img" />
+          <p>Abdel Djalil</p>
+        </div>
+
+        <div className="photo_individuelle">
+          <img src={Lauryn} alt="lauryn_img" />
+          <p>Lauryn</p>
+        </div>
       </section>
     </>
   );
