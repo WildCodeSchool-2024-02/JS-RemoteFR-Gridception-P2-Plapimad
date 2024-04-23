@@ -4,7 +4,7 @@ function Contact() {
   return (
     <div>
       <section className="backgroundimage" id="backgroundimage">
-        <h1 className="titleform">Une idée à suggérer? </h1>
+        <h1 className="titleform">Une idée à suggérer ? </h1>
       </section>
 
       <form>
