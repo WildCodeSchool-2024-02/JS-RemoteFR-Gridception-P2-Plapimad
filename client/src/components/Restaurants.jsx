@@ -18,15 +18,20 @@ function Restaurants() {
         ci-dessous nos bons plans culinaires. N’hésitez pas à nous faire vos
         retours sur les endroits que nous avons sélectionnés pour vous !
       </p>
-      <div className="culinaire-container">
-        <div>
+      <div className="resto-container">
+        <div className="culinaire-container">
           <div>
-            <h2>{randomRestaurant.nom}</h2>
-            <img src={randomRestaurant.image} alt="restaurant" />
-            <a href={randomRestaurant.lien}></a>
-            <p>{randomRestaurant.adresse}</p>
+            <div>
+              <a href={randomRestaurant.lien} target="_blank" rel="noreferrer">
+                <h2>{randomRestaurant.nom}</h2>
+              </a>
+              <img src={randomRestaurant.image} alt="restaurant" />
+
+              <p>{randomRestaurant.adresse}</p>
+            </div>
           </div>
         </div>
+        <p className="desc-container">{randomRestaurant.description}</p>
       </div>
     </div>
   );

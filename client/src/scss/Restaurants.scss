@@ -6,7 +6,19 @@
   border: 1px solid skyblue;
   max-width: min-content;
   margin: 1rem 0rem 2rem 1rem;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .desc-container {
+    text-align: center;
+    font-size: medium;
+    display: none;
+  }
 }
+
 .p-culinaire {
   text-align: justify;
   padding: 0 10px 0 10px;
@@ -16,7 +28,19 @@
     background-color: skyblue;
     transform: scale(1.1);
   }
+
+  .resto-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+
+    .desc-container {
+      font-size: 22px;
+    }
+  }
 }
+
 .culinaire-global img {
   width: 23rem;
   height: auto;
