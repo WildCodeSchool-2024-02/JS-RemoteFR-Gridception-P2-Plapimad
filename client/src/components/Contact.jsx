@@ -4,17 +4,17 @@ function Contact() {
   return (
     <div>
       <section className="backgroundimage" id="backgroundimage">
-        <h1 className="titleform">Une idée à suggérer? </h1>
+        <h1 className="titleform">Une idée à suggérer ? </h1>
       </section>
 
       <form>
-        <input className="nom-container" placeholder="Nom*" />
+        <input className="nom-container" required placeholder="Nom*" />
 
-        <input placeholder="Prénom*" />
+        <input required placeholder="Prénom*" />
 
-        <input className="mail-container" placeholder="Mail*" />
+        <input className="mail-container" required placeholder="Mail*" />
 
-        <textarea
+        <textarea required
           className="textarea-container"
           placeholder="Message*"
           name="messagearea"
@@ -23,7 +23,7 @@ function Contact() {
           rows="10"
         />
 
-        <input className="button" type="submit" value="Envoyez votre demande" />
+        <input className="button" required type="submit" value="Envoyez votre demande" />
       </form>
     </div>
   );
