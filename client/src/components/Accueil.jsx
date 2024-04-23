@@ -5,10 +5,11 @@ import logoPlapimad from "../assets/images/logoPlapimad3.png";
 import logoInstagram from "../assets/images/logoInstagram.png";
 import logoPinterest from "../assets/images/logoPinterest.png";
 import {Link, Outlet} from "react-router-dom";
-import Equipe from "../components/Equipe";
+
 
 function Accueil() {
   return (
+    
     <div className="global-div">
       <div className="div_nav_bar">
         <div className="logos_bar">
@@ -48,9 +49,9 @@ function Accueil() {
         <ul className="ul_nav_bar">
           <li>
             <a href="#activite-container">Activités</a>
-          </li>
+          </li>          
           <li>
-            <Link to="Equipe">Equipe</Link>
+            <Link to="/Equipe">Equipe</Link>
           </li>
           <li>
             <a href="#backgroundimage">Contact</a>
@@ -62,10 +63,9 @@ function Accueil() {
         <h1>AventuresAtmo</h1>
         <p>"Chaque prévision est une opportunité à Tours"</p>
       </div>
-      <main>
-        
-      </main>
+      
     </div>
+    
   );
 }
 export default Accueil;
