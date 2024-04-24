@@ -45,9 +45,32 @@ form {
 
 .popupContainer{
   position: fixed;
-  margin: auto;
-  border: 1px solid blueviolet;
-  bottom: 0;
+  bottom: 60%;
+  left: 10%;
+  right: 10%;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: orangered;
+  border: 2px solid rgb(210, 58, 2);
+  border-radius: 40px 0 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .closePopup{ 
+    width: 10rem;
+    height: 2rem;
+    border-radius: 20px 0 20px 0;
+    background-color: skyblue;
+    color: black;
+    font-size: 1.2rem;
+    border: 2px solid rgb(10, 173, 238);
+  }
+}
+.Popup{
+  p{
+    font-size: 1.5rem;
+  }
 }
 
 input {
