@@ -10,6 +10,7 @@
 
   h1 {
     color: white;
+    text-shadow: 1px 1px 1px black;
   }
   @media screen and (min-height: 798px) {
     height: 100vh;
@@ -23,51 +24,101 @@
 }
 
 form {
-  margin-bottom: 4rem;
+  background-color: skyblue;
+  border: 2px solid rgb(10, 173, 238);
+  padding: 2rem;
+  margin: 3rem;
   display: flex;
-  justify-content: center;
-  background-color: rgb(173, 216, 230);
-  margin-left: 5%;
-  margin-right: 5%;
+  flex-direction: column;
+  align-items: center;
 
-  margin-top: 5rem;
   @media screen and (min-width: 767px) {
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 20%;
+    margin-right: 20%;
   }
   @media screen and (min-width: 1009px) {
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 25%;
+    margin-right: 25%;
   }
   border-radius: 40px 0 40px 0;
 }
-.contact-ul {
-  list-style-type: none;
+
+.popupContainer {
+  position: fixed;
+  bottom: 55%;
+  left: 10%;
+  right: 10%;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: orangered;
+  border: 2px solid rgb(210, 58, 2);
+  border-radius: 40px 0 40px 0;
   display: flex;
   flex-direction: column;
-  row-gap: 2rem;
-  width: 100%;
-  margin-right: 3rem;
+  align-items: center;
+  text-align: justify;
+
+  @media screen and (min-width: 767px) {
+    left: 20%;
+    right: 20%;
+    bottom: 45%;
+  }
+
+  @media screen and (min-width: 1009px) {
+    left: 30%;
+    right: 30%;
+    bottom: 60%;
+    padding: 1.5rem;
+  }
+
+  .closePopup {
+    width: 10rem;
+    height: 2rem;
+    border-radius: 20px 0 20px 0;
+    background-color: skyblue;
+    color: black;
+    font-size: 1.1rem;
+    border: 2px solid rgb(10, 173, 238);
+  }
 }
+.Popup {
+  p {
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+}
+
 input {
   width: 100%;
   background-color: white;
   border: none;
+  margin-bottom: 0.7rem;
+  height: 2rem;
+  border: 2px solid rgb(10, 173, 238);
 }
 textarea {
   width: 100%;
   font-family: Arial;
+  resize: none;
   border: none;
+  border: 2px solid rgb(10, 173, 238);
 }
 .button {
+  margin-top: 2rem;
+  margin-bottom: 0;
   background-color: orangered;
+  border: 2px solid rgb(210, 58, 2);
   width: 10rem;
   height: 3rem;
   color: white;
   border-radius: 20px 0 20px 0;
 }
 
-.button-li {
-  display: flex;
-  justify-content: center;
+.button:hover {
+  color: black;
+}
+
+.textarea-container {
+  margin: 1rem;
 }

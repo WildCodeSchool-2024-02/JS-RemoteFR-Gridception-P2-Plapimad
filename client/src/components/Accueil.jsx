@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../scss/accueil.scss";
 import logoGitHub from "../assets/images/logoGitHub.png";
 import logoTwitter from "../assets/images/logoTwitter.png";
@@ -48,6 +49,9 @@ function Accueil() {
             <a href="#activite-container">Activités</a>
           </li>
           <li>
+            <Link to="/Equipe">Equipe</Link>
+          </li>
+          <li>
             <a href="#backgroundimage">Contact</a>
           </li>
         </ul>
@@ -55,7 +59,9 @@ function Accueil() {
 
       <div className="principal_title">
         <h1>AventuresAtmo</h1>
-        <p>"Chaque prévision est une opportunité à Tours"</p>
+        <p className="p-accueil">
+          Chaque prévision est une opportunité à Tours
+        </p>
       </div>
     </div>
   );
