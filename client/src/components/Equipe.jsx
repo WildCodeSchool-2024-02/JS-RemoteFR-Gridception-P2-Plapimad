@@ -1,25 +1,47 @@
 import { Link } from "react-router-dom";
-import AbdelDjalil from "../assets/images/AbdelDjalil.png";
-import pedro from "../assets/images/pedro.jpg";
+import AbdelDjalil from "../assets/images/AbdelDjalil.jpg";
+import Pedro from "../assets/images/pedro.jpg";
 import Maeva from "../assets/images/Maeva.jpg";
-import lauryn from "../assets/images/lauryn.png";
+import Lauryn from "../assets/images/Lauryn.jpg";
+import "../scss/equipe.scss";
 
+function Equipe() {
+  return (
+    <div className="backgroundEquipe">
+      <button className="boutonRetour">
+        <Link className="lienRetour" to="/">
+          Retour
+        </Link>
+      </button>
+      <h1 className="titreEquipe">L'équipe Plapimad</h1>
 
-function Equipe () {
-    return( <div>
-    <nav className= "EquipeNav">
-        <Link to = "/">Accueil</Link>
-    </nav>
-    <h1>L'équipe Plapimad</h1>
-    <section className=""></section>
-    <img src={pedro} alt="pedro_img" />
-    <img src={Maeva} alt="Maeva_img" />
-    <img src={AbdelDjalil} alt="AbdelDjalil_img" />
-    <img src={lauryn} alt="lauryn_img" />
-    
+      <section className="photos_equipe">
+        <div className="photo_individuelle">
+          <img src={Pedro} alt="pedro_img" />
+          <p className="nomEquipe">Pierre</p>
+          <p className="roleEquipe">Code Reviewer</p>
+        </div>
+
+        <div className="photo_individuelle">
+          <img src={Maeva} alt="Maeva_img" />
+          <p className="nomEquipe">Maëva</p>
+          <p className="roleEquipe">Scrum Master</p>
+        </div>
+
+        <div className="photo_individuelle">
+          <img src={AbdelDjalil} alt="AbdelDjalil_img" />
+          <p className="nomEquipe">Abdel Djalil</p>
+          <p className="roleEquipe">Product Owner</p>
+        </div>
+
+        <div className="photo_individuelle" id="margin_Lauryn">
+          <img src={Lauryn} alt="lauryn_img" />
+          <p className="nomEquipe">Lauryn</p>
+          <p className="roleEquipe">Code Reviewer</p>
+        </div>
+      </section>
     </div>
-
-    )
+  );
 }
 
 export default Equipe;
