@@ -8,8 +8,8 @@
   border-radius: 40px 0 40px 0;
 
   @media screen and (min-width: 820px) {
-    margin-left: 7%;
-    margin-right: 7%;
+    margin-left: 20%;
+    margin-right: 20%;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -28,6 +28,10 @@
     @media screen and (min-width: 820px) {
       justify-content: center;
     }
+  }
+
+  .meteo-title {
+    font-size: 3rem;
   }
 
   .box-globale {

@@ -1,10 +1,10 @@
 .culinaire-container {
   display: flex;
+  justify-content: center;
   text-align: center;
   border-radius: 40px 0 40px 0;
   border: 1px solid skyblue;
   max-width: min-content;
-  margin: 1rem 0rem 2rem 1rem;
 
   a {
     text-decoration: none;
@@ -16,6 +16,7 @@
     font-size: medium;
   }
 }
+
 blockquote p::before {
   content: "\201D";
   font-size: 55px;
@@ -28,7 +29,14 @@ blockquote p::before {
   text-align: justify;
   padding: 0 10px 0 10px;
 }
-@media screen and (width >= 500px) {
+
+.culinaire-global img {
+  width: auto;
+  height: 20rem;
+  border: 1px solid skyblue;
+}
+
+@media screen and (width >= 900px) {
   .culinaire-container:hover {
     background-color: skyblue;
     transform: scale(1.1);
@@ -56,15 +64,6 @@ blockquote p::before {
       padding: 2rem;
     }
   }
-}
-
-.culinaire-global img {
-  width: auto;
-  height: 20rem;
-  border: 1px solid skyblue;
-}
-
-@media screen and (width >= 900px) {
   .culinaire-container {
     border: 1px solid skyblue;
     max-width: min-content;
