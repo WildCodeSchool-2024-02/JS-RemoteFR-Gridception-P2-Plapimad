@@ -2,6 +2,7 @@
   background-image: url(../assets/images/Tours.jpg);
   background-size: cover;
   height: 100vh;
+  margin-bottom: 3rem;
 }
 
 .logos_bar {
@@ -65,6 +66,11 @@
   width: 25%;
 }
 
+.p-accueil::before {
+  content: "\201D";
+  font-family: "Courier New", Courier, monospace;
+  text-shadow: black 1px 5px 10px;
+}
 // responsive nav
 
 @media screen and (width >= 900px) {
