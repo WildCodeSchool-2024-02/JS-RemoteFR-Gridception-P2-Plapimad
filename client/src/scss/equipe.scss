@@ -1,11 +1,18 @@
 // .backgroundEquipe {
 //   background-image: url(../assets/images/carteFranceEquipe2.png);
-//   background-size: cover;
-//   height: 100vh;
+//   // background-size: cover;
+//   background-size: 185px;
+
+//   @media screen and (width >= 900px) {
+//     background-size: 70%;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//   }
 // }
 
 .backgroundEquipe > .titreEquipe {
   font-family: Montserrat-VariableFont_wght;
+  margin-bottom: 10%;
   @media screen and (width >= 900px) {
     margin-bottom: 5%;
     margin-top: 0;
@@ -27,10 +34,16 @@
   }
 }
 
-.photos_equipe > p {
+.photo_individuelle > .nomEquipe {
+  font-weight: bold;
+  margin-bottom: 0;
   @media screen and (width >= 900px) {
-    font-size: 120%;
+    font-size: 200%;
   }
+}
+
+.photo_individuelle > .roleEquipe {
+  font-weight: 500;
 }
 
 .photos_equipe {
@@ -40,9 +53,25 @@
   gap: 5rem;
   justify-content: space-around;
 
+  background-image: url(../assets/images/carteFranceEquipe2.png);
+  background-size: 185px;
+
   @media screen and (width >= 900px) {
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70rem;
+
     flex-direction: row;
-    margin-bottom: 5%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+#margin_Lauryn {
+  margin-bottom: 16%;
+  @media screen and (width >= 900px) {
+    margin-bottom: 0;
   }
 }
 
@@ -50,8 +79,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: skyblue;
+  background-color: rgba(135, 206, 235, 0.7);
   width: 70vw;
+  border: 3px solid skyblue;
   border-radius: 1rem;
 }
 

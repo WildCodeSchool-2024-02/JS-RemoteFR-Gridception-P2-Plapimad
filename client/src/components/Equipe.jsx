@@ -14,25 +14,30 @@ function Equipe() {
         </Link>
       </button>
       <h1 className="titreEquipe">L'équipe Plapimad</h1>
+
       <section className="photos_equipe">
         <div className="photo_individuelle">
           <img src={Pedro} alt="pedro_img" />
-          <p>Pierre</p>
+          <p className="nomEquipe">Pierre</p>
+          <p className="roleEquipe">Code Reviewer</p>
         </div>
 
         <div className="photo_individuelle">
           <img src={Maeva} alt="Maeva_img" />
-          <p>Maéva</p>
+          <p className="nomEquipe">Maëva</p>
+          <p className="roleEquipe">Scrum Master</p>
         </div>
 
         <div className="photo_individuelle">
           <img src={AbdelDjalil} alt="AbdelDjalil_img" />
-          <p>Abdel Djalil</p>
+          <p className="nomEquipe">Abdel Djalil</p>
+          <p className="roleEquipe">Product Owner</p>
         </div>
 
-        <div className="photo_individuelle">
+        <div className="photo_individuelle" id="margin_Lauryn">
           <img src={Lauryn} alt="lauryn_img" />
-          <p>Lauryn</p>
+          <p className="nomEquipe">Lauryn</p>
+          <p className="roleEquipe">Code Reviewer</p>
         </div>
       </section>
     </div>
