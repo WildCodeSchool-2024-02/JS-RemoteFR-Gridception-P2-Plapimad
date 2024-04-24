@@ -5,6 +5,7 @@
   border-radius: 40px 0 40px 0;
   border: 1px solid skyblue;
   max-width: min-content;
+  margin: 0 1rem 0 1rem;
 
   a {
     text-decoration: none;
@@ -31,7 +32,7 @@ blockquote p::before {
 }
 
 .culinaire-global img {
-  width: auto;
+  width: 22rem;
   height: 20rem;
   border: 1px solid skyblue;
 }
@@ -46,6 +47,10 @@ blockquote p::before {
     margin-top: 5rem;
   }
 
+  .culinaire-global img {
+    width: 35rem;
+    height: 22rem;
+  }
   .p-culinaire {
     margin: 0 8rem 2rem 8rem;
   }
