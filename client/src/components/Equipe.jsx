@@ -8,7 +8,7 @@ import "../scss/equipe.scss";
 function Equipe() {
   return (
     <div className="backgroundEquipe">
-      <button className="boutonRetour">
+      <button className="boutonRetour" type="submit">
         <Link className="lienRetour" to="/">
           Retour
         </Link>
