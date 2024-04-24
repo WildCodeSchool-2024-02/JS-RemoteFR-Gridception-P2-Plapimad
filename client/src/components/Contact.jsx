@@ -1,6 +1,21 @@
+import { useState } from "react";
 import "../scss/contact.scss";
+import Popup from "./Popup";
+
 
 function Contact() {
+const [showPopup, setShowPopup] = useState(false);
+
+const togglePopup = (() => {
+  setShowPopup(!showPopup);  
+});
+const togglePopupClose = (() => {
+  setShowPopup(showPopup);
+  if (!showPopup){
+    window.location.reload();
+  }
+})
+ 
   return (
     <div>
       <section className="backgroundimage" id="backgroundimage">
@@ -22,9 +37,20 @@ function Contact() {
           cols="30"
           rows="10"
         />
-
-        <input className="button" required type="submit" value="Envoyez votre demande" />
+      
+    <input className="button" onClick={togglePopup} value="Envoyez votre demande" />
+    
+{/* Afficher Popup si tous les champs sont renseignés */}
+    
+    {showPopup && (
+    <div className="popupContainer">
+      <Popup />
+      <button className="closePopup" onClick={togglePopupClose}>Confirmer</button>
+    </div>
+  )}
       </form>
+
+
     </div>
   );
 }
