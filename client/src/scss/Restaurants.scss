@@ -1,6 +1,5 @@
 .culinaire-container {
   display: flex;
-
   text-align: center;
   border-radius: 40px 0 40px 0;
   border: 1px solid skyblue;
@@ -15,8 +14,14 @@
   .desc-container {
     text-align: center;
     font-size: medium;
-    display: none;
   }
+}
+blockquote p::before {
+  content: "\201D";
+  font-size: 55px;
+  font-family: "Courier New", Courier, monospace;
+  text-shadow: black 1px 5px 10px;
+  color: white;
 }
 
 .p-culinaire {
@@ -29,21 +34,33 @@
     transform: scale(1.1);
   }
 
+  .container-title {
+    margin-top: 5rem;
+  }
+
+  .p-culinaire {
+    margin: 0 8rem 2rem 8rem;
+  }
   .resto-container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10rem;
+    margin-left: 3rem;
 
     .desc-container {
       font-size: 22px;
+
+      background-color: rgba(135, 206, 235, 0.3);
+      border-radius: 40px 0 40px 0;
+      padding: 2rem;
     }
   }
 }
 
 .culinaire-global img {
-  width: 23rem;
-  height: auto;
+  width: auto;
+  height: 15rem;
   border: 1px solid skyblue;
 }
 
@@ -51,5 +68,11 @@
   .culinaire-container {
     border: 1px solid skyblue;
     max-width: min-content;
+  }
+}
+
+@media screen and (width < 900px) {
+  .desc-container {
+    display: none;
   }
 }

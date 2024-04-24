@@ -16,14 +16,15 @@ const restoListe = [
     image: resto1,
     lien: "https://www.lopidom.fr/fr/",
     description:
-      "Découvrir à ses convives ce que la nature fait de meilleur, tout en les surprenant avec des associations originales qui invitent au voyage",
+      "Découvrir à ses convives ce que la nature fait de meilleur, tout en les surprenant avec des associations originales qui invitent au voyage. ",
   },
   {
     nom: "L'Évidence",
     adresse: "1 place des Marronniers, Montbazon, 37250, France",
     image: resto2,
     lien: "https://www.restaurant-levidence.com",
-    description: "L'évidence cuisiné",
+    description:
+      "L’Évidence est ce qui s’impose à l’esprit comme une vérité, ou une réalité, sans qu’il n’y ait besoin d’aucune preuve ou justification. ",
   },
   {
     nom: "Arbore-et-sens",
@@ -31,7 +32,7 @@ const restoListe = [
     image: resto3,
     lien: "https://restaurant-arbore-et-sens.fr",
     description:
-      "Propose une cuisine d’une extrême finesse qui fait appel à tous vos sens",
+      "Propose une cuisine d’une extrême finesse qui fait appel à tous vos sens. ",
   },
 
   {
@@ -40,7 +41,7 @@ const restoListe = [
     image: resto4,
     lien: "https://www.chateaudepray.fr",
     description:
-      "Un château hôtel de charme et son restaurant gastronomique étoilé",
+      "Un château hôtel de charme et son restaurant gastronomique étoilé. ",
   },
   {
     nom: "l’Auberge Pom’Poire",
@@ -48,7 +49,7 @@ const restoListe = [
     image: resto5,
     lien: "https://aubergepompoire.fr/accueil/",
     description:
-      "Pour une pause à la campagne ou un instant gourmet, l'Auberge Pom'Poire vous propose ses accueillantes chambres classées 3 étoiles et une table gastronomique récompensée par le guide Michelin.",
+      "Pour une pause à la campagne ou un instant gourmet, l'Auberge Pom'Poire vous propose ses accueillantes chambres classées 3 étoiles et une table gastronomique récompensée par le guide Michelin. ",
   },
   {
     nom: "Vincent cuisinier de campagne",
@@ -56,7 +57,7 @@ const restoListe = [
     image: resto6,
     lien: "https://vincentcuisinierdecampagne.blogspot.com",
     description:
-      "Un charme fou à partager sans modération... Ici, tout est exact, harmonieux et serein",
+      "Un charme fou à partager sans modération... Ici, tout est exact, harmonieux et serein. ",
   },
   {
     nom: "Auberge du Bon Laboureur",
@@ -71,7 +72,7 @@ const restoListe = [
     image: resto8,
     lien: "https://www.leshautesroches.com/fr/",
     description:
-      "Taillées dans la roche, les chambres troglodytiques vous invitent à passer un séjour atypique au sein de notre luxueux hôtel restaurant.",
+      "Taillées dans la roche, les chambres troglodytiques vous invitent à passer un séjour atypique au sein de notre luxueux hôtel restaurant. ",
   },
   {
     nom: "La Tratt",
@@ -79,7 +80,7 @@ const restoListe = [
     image: resto9,
     lien: "https://www.tripadvisor.fr/Restaurant_Review-g187130-d24178275-Reviews-La_Tratt-Tours_Indre_et_Loire_Centre_Val_de_Loire.html",
     description:
-      "Des pizzas à emporter avec un maximum de produits locaux, Vice Champion de France !",
+      "Des pizzas à emporter avec un maximum de produits locaux, Vice Champion de France.  ",
   },
   {
     nom: "LE TATOUE TOQUE",
@@ -87,7 +88,7 @@ const restoListe = [
     image: resto10,
     lien: "https://www.tatouetoque.fr",
     description:
-      "Un Chef un peu toqué Champion du monde de Burgers, une ambiance chaleureuse, et une cuisine maison et authentique, c'est tout l'esprit du Tatoué Toqué!",
+      "Un Chef un peu toqué Champion du monde de Burgers, une ambiance chaleureuse, et une cuisine maison et authentique, c'est tout l'esprit du Tatoué Toqué. ",
   },
 ];
 export default restoListe;

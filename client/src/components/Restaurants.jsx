@@ -12,7 +12,7 @@ function Restaurants() {
 
   return (
     <div className="culinaire-global">
-      <h2>Les bons plans culinaires</h2>
+      <h2 className="container-title">Les bons plans culinaires</h2>
       <p className="p-culinaire">
         Si vous êtes de passage sur Tours ou Tourangeaux, vous trouverez
         ci-dessous nos bons plans culinaires. N’hésitez pas à nous faire vos
@@ -31,7 +31,9 @@ function Restaurants() {
             </div>
           </div>
         </div>
-        <p className="desc-container">{randomRestaurant.description}</p>
+        <blockquote>
+          <p className="desc-container">{randomRestaurant.description}</p>
+        </blockquote>
       </div>
     </div>
   );
