@@ -7,11 +7,13 @@ import "../scss/equipe.scss";
 
 function Equipe() {
   return (
-    <>
-      <nav className="EquipeNav">
-        <Link to="/">Accueil</Link>
-      </nav>
-      <h1>L'équipe Plapimad</h1>
+    <div className="backgroundEquipe">
+      <button className="boutonRetour">
+        <Link className="lienRetour" to="/">
+          Retour
+        </Link>
+      </button>
+      <h1 className="titreEquipe">L'équipe Plapimad</h1>
       <section className="photos_equipe">
         <div className="photo_individuelle">
           <img src={Pedro} alt="pedro_img" />
@@ -33,7 +35,7 @@ function Equipe() {
           <p>Lauryn</p>
         </div>
       </section>
-    </>
+    </div>
   );
 }
 

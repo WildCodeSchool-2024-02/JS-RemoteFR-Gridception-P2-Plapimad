@@ -1,9 +1,36 @@
+// .backgroundEquipe {
+//   background-image: url(../assets/images/carteFranceEquipe2.png);
+//   background-size: cover;
+//   height: 100vh;
+// }
+
+.backgroundEquipe > .titreEquipe {
+  font-family: Montserrat-VariableFont_wght;
+  @media screen and (width >= 900px) {
+    margin-bottom: 5%;
+    margin-top: 0;
+    font-size: 500%;
+    letter-spacing: 2px;
+  }
+}
+
 .photos_equipe img {
   width: 60vw;
   height: 40vh;
   object-fit: cover;
   margin: 10%;
   border-radius: 40px 0 40px 0;
+  @media screen and (width >= 900px) {
+    width: 20vw;
+    height: 50vh;
+    margin-bottom: 0;
+  }
+}
+
+.photos_equipe > p {
+  @media screen and (width >= 900px) {
+    font-size: 120%;
+  }
 }
 
 .photos_equipe {
@@ -12,6 +39,11 @@
   align-items: center;
   gap: 5rem;
   justify-content: space-around;
+
+  @media screen and (width >= 900px) {
+    flex-direction: row;
+    margin-bottom: 5%;
+  }
 }
 
 .photo_individuelle {
@@ -21,4 +53,28 @@
   background-color: skyblue;
   width: 70vw;
   border-radius: 1rem;
+}
+
+.lienRetour {
+  text-decoration: none;
+  font-family: Montserrat-VariableFont_wght;
+  font-weight: bold;
+  @media screen and (width >= 900px) {
+    font-size: 120%;
+  }
+}
+
+.boutonRetour {
+  margin: 5%;
+  border: 3px solid rgb(26, 174, 233);
+  border-radius: 15px;
+  background-color: skyblue;
+  @media screen and (width >= 900px) {
+    margin-top: 2%;
+    margin-left: 2%;
+    width: 5%;
+    padding: 0.2rem;
+    display: flex;
+    justify-content: center;
+  }
 }
