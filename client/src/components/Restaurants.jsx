@@ -12,7 +12,7 @@ function Restaurants() {
 
   return (
     <div className="culinaire-global">
-      <h2>Les bons plans culinaires</h2>
+      <h2 className="container-title">Les bons plans culinaires</h2>
       <p className="p-culinaire">
         Si vous êtes de passage sur Tours ou Tourangeaux, vous trouverez
         ci-dessous nos bons plans culinaires. N’hésitez pas à nous faire vos
@@ -21,17 +21,23 @@ function Restaurants() {
       <div className="resto-container">
         <div className="culinaire-container">
           <div>
-            <div>
+            <div className="container-card">
               <a href={randomRestaurant.lien} target="_blank" rel="noreferrer">
                 <h2>{randomRestaurant.nom}</h2>
               </a>
-              <img src={randomRestaurant.image} alt="restaurant" />
+              <img
+                className="img-card"
+                src={randomRestaurant.image}
+                alt="restaurant"
+              />
 
               <p>{randomRestaurant.adresse}</p>
             </div>
           </div>
         </div>
-        <p className="desc-container">{randomRestaurant.description}</p>
+        <blockquote>
+          <p className="desc-container">{randomRestaurant.description}</p>
+        </blockquote>
       </div>
     </div>
   );

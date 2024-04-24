@@ -51,7 +51,7 @@ function Activite() {
 
   return (
     <div className="activite-container" id="activite-container">
-      <h1>Qu'allons nous faire aujourd'hui ?</h1>
+      <h1 className="h1-activite">Qu'allons nous faire aujourd'hui ?</h1>
 
       <Meteo
         icon={datas?.weather?.[0]?.icon}
