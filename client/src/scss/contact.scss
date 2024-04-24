@@ -43,6 +43,13 @@ form {
   border-radius: 40px 0 40px 0;
 }
 
+.popupContainer{
+  position: fixed;
+  margin: auto;
+  border: 1px solid blueviolet;
+  bottom: 0;
+}
+
 input {
   width: 100%;
   background-color: white;
@@ -54,6 +61,7 @@ input {
 textarea {
   width: 100%;
   font-family: Arial;
+  resize: none;
   border: none;
   border : 2px solid rgb(10, 173, 238);
 }

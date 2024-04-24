@@ -5,44 +5,37 @@ import Popup from "./Popup";
 function Contact() {
   const [showPopup, setShowPopup] = useState(false);
 
-  const [lastName, setLastName] = useState("");
-  const [firstName, setFirstName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [contactForm, setContactForm] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    message: "",
+  });
 
-  const handleChangeFirstName = (event) => {
-    if (event.target.value !== null) {
-      setFirstName(event.target.value);
-    }
-  };
-
-  const handleChangeLastName = (event) => {
-    if (event.target.value !== null) {
-      setLastName(event.target.value);
-    }
-  };
-
-  const handleChangeEmail = (event) => {
-    if (event.target.value !== null) {
-      setEmail(event.target.value);
-    }
-  };
-
-  const handleChangeMessage = (event) => {
-    if (event.target.value !== null) {
-      setMessage(event.target.value);
-    }
+  const handleChangeForm = (event) => {
+    const { name, value } = event.target;
+    setContactForm({ ...contactForm, [name]: value });
   };
 
   const togglePopup = () => {
-    if (firstName !== "" && email !== "" && lastName !== "" && message !== "") {
+    if (
+      contactForm.firstName !== "" &&
+      contactForm.email !== "" &&
+      contactForm.lastName !== "" &&
+      contactForm.message !== ""
+    ) {
       setShowPopup(true);
     }
   };
 
   const togglePopupClose = () => {
     setShowPopup(false);
-    window.location.reload();
+    setContactForm({
+      firstName: "",
+      lastName: "",
+      email: "",
+      message: "",
+    });
   };
 
   return (
@@ -56,50 +49,53 @@ function Contact() {
           className="nom-container"
           required
           placeholder="Nom*"
-          value={lastName}
-          onChange={handleChangeLastName}
+          name="lastName"
+          value={contactForm.lastName}
+          onChange={(e) => handleChangeForm(e)}
         />
 
         <input
           required
           placeholder="Prénom*"
-          value={firstName}
-          onChange={handleChangeFirstName}
+          name="firstName"
+          value={contactForm.firstName}
+          onChange={(e) => handleChangeForm(e)}
         />
 
         <input
           className="mail-container"
           required
           placeholder="Mail*"
-          value={email}
-          onChange={handleChangeEmail}
+          name="email"
+          value={contactForm.email}
+          onChange={(e) => handleChangeForm(e)}
         />
 
         <textarea
           required
           className="textarea-container"
           placeholder="Message*"
-          name="messagearea"
+          name="message"
           id="messagearea"
-          cols="30"
+          cols="3"
           rows="10"
-          value={message}
-          onChange={handleChangeMessage}
+          value={contactForm.message}
+          onChange={(e) => handleChangeForm(e)}
         />
 
         <button className="button" onClick={togglePopup}>
           Envoyez votre demande
         </button>
-
-        {showPopup && (
-          <div className="popupContainer">
-            <Popup />
-            <button className="closePopup" onClick={togglePopupClose}>
-              Confirmer
-            </button>
-          </div>
-        )}
       </form>
+
+      {showPopup && (
+        <div className="popupContainer">
+          <Popup />
+          <button className="closePopup" onClick={togglePopupClose}>
+            Confirmer
+          </button>
+        </div>
+      )}
     </div>
   );
 }
