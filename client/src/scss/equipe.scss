@@ -1,0 +1,95 @@
+.backgroundEquipe > .titreEquipe {
+  font-family: Montserrat-VariableFont_wght;
+  margin-bottom: 10%;
+  @media screen and (width >= 900px) {
+    margin-bottom: 5%;
+    margin-top: 0;
+    font-size: 500%;
+    letter-spacing: 2px;
+  }
+}
+
+.photos_equipe img {
+  width: 60vw;
+  height: 40vh;
+  object-fit: cover;
+  margin: 10%;
+  border-radius: 40px 0 40px 0;
+  @media screen and (width >= 900px) {
+    width: 20vw;
+    height: 50vh;
+    margin-bottom: 0;
+  }
+}
+
+.photo_individuelle > .nomEquipe {
+  font-weight: bold;
+  margin-bottom: 0;
+  @media screen and (width >= 900px) {
+    font-size: 200%;
+  }
+}
+
+.photos_equipe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  justify-content: space-around;
+
+  background-image: url(../assets/images/carteFranceEquipe2.png);
+  background-size: 211px;
+
+  @media screen and (width >= 900px) {
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80rem;
+
+    flex-direction: row;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+.photo_individuelle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(135, 206, 235, 0.7);
+  width: 70vw;
+  border: 3px solid skyblue;
+  border-radius: 1rem;
+}
+
+.photo_individuelle:last-of-type {
+  margin-bottom: 16%;
+
+  @media screen and (width >= 900px) {
+    margin-bottom: 0;
+  }
+}
+
+.lienRetour {
+  text-decoration: none;
+  font-family: Montserrat-VariableFont_wght;
+  font-weight: bold;
+  @media screen and (width >= 900px) {
+    font-size: 120%;
+  }
+}
+
+.boutonRetour {
+  margin: 5%;
+  border: 3px solid rgb(26, 174, 233);
+  border-radius: 15px;
+  background-color: skyblue;
+  @media screen and (width >= 900px) {
+    margin-top: 2%;
+    margin-left: 2%;
+    width: 5%;
+    padding: 0.2rem;
+    display: flex;
+    justify-content: center;
+  }
+}

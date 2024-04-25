@@ -10,10 +10,14 @@
   margin: 0 1rem 0 1rem;
 
   img {
-    width: 414px;
-    height: auto;
+    width: auto;
+    height: 40rem;
     box-shadow: 5px 5px 5px gray;
   }
+}
+
+.carousel .slide img {
+  height: 30vh;
 }
 
 .carousel .overlay {

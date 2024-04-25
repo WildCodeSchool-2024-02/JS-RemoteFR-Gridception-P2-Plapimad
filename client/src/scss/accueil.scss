@@ -1,7 +1,8 @@
 .global-div {
-  background-image: url("https://media.discordapp.net/attachments/1227895178271133777/1227908263467683911/place_plumereau_ville_tours_credit_adt_touraine_jcoutand_2029.jpg?ex=662a1daf&is=6617a8af&hm=b0c5d268c500342ffbfe04e245667263714e1dc0fedaefc3264e5f289234c5c5&=&format=webp&width=1006&height=671");
+  background-image: url(../assets/images/Tours.jpg);
   background-size: cover;
   height: 100vh;
+  margin-bottom: 3rem;
 }
 
 .logos_bar {
@@ -65,6 +66,11 @@
   width: 25%;
 }
 
+.p-accueil::before {
+  content: "\201D";
+  font-family: "Courier New", Courier, monospace;
+  text-shadow: black 1px 5px 10px;
+}
 // responsive nav
 
 @media screen and (width >= 900px) {
