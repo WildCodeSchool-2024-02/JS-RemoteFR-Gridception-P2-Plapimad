@@ -64,6 +64,10 @@
 
 .photo_individuelle:last-of-type {
   margin-bottom: 16%;
+
+  @media screen and (width >= 900px) {
+    margin-bottom: 0;
+  }
 }
 
 .lienRetour {
