@@ -35,6 +35,10 @@
   color: white;
 }
 
+.ul_nav_bar li {
+  text-shadow: 2px 1px 1px black;
+}
+
 .principal_title {
   display: flex;
   flex-direction: column;
@@ -45,6 +49,7 @@
 .principal_title > h1 {
   color: white;
   font-size: 3rem;
+  text-shadow: 2px 1px 1px black;
 }
 .principal_title > p {
   color: white;
@@ -66,11 +71,11 @@
   width: 25%;
 }
 
-.p-accueil::before {
-  content: "\201D";
-  font-family: "Courier New", Courier, monospace;
-  text-shadow: black 1px 5px 10px;
+.p-accueil {
+  text-shadow: 2px 1px 1px black;
+  font-weight: 600;
 }
+
 // responsive nav
 
 @media screen and (width >= 900px) {
