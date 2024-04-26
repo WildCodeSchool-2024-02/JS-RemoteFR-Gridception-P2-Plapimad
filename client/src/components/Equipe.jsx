@@ -15,7 +15,7 @@ function Equipe() {
       <section className="photos_equipe">
         {dataEquipe.map((individu) => (
           <div className="photo_individuelle" key={individu.name}>
-            <img src={individu.image} alt="pedro_img" />
+            <img src={individu.image} alt="image individuelle" />
             <p className="nomEquipe">{individu.name}</p>
             <p className="roleEquipe">{individu.role}</p>
           </div>
