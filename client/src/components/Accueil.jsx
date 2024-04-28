@@ -4,9 +4,11 @@ import logoTwitter from "../assets/images/logoTwitter.png";
 import logoPlapimad from "../assets/images/logoPlapimad3.png";
 import logoInstagram from "../assets/images/logoInstagram.png";
 import logoPinterest from "../assets/images/logoPinterest.png";
-import { Link, Outlet } from "react-router-dom";
+import { Link,} from "react-router-dom";
 
 function Accueil() {
+ 
+
   return (
     <div className="global-div">
       <div className="div_nav_bar">
