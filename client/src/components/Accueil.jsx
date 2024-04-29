@@ -1,5 +1,9 @@
 import { Link } from "react-router-dom";
+import Lottie from "lottie-react";
+import scrull from "../animation/scrull down.json";
+
 import "../scss/accueil.scss";
+
 import logoGitHub from "../assets/images/logoGitHub.png";
 import logoTwitter from "../assets/images/logoTwitter.png";
 import logoPlapimad from "../assets/images/logoPlapimad3.png";
@@ -74,9 +78,10 @@ function Accueil() {
       </div>
 
       <div className="principal_title">
-        <h1>AventuresAtmo</h1>
+        <h1 className="titre-accueil">AventuresAtmo</h1>
         <p className="p-accueil">
-          Chaque prévision est une opportunité à Tours
+          "Chaque prévision est une opportunité à Tours
+          <Lottie className="lottie-container" animationData={scrull} />
         </p>
       </div>
     </div>

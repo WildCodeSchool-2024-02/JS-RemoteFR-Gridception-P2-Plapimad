@@ -75,6 +75,16 @@
   width: 25%;
 }
 
+
+.lottie-container {
+  width: 35%;
+  margin-left: 8rem;
+  margin-top: 6rem;
+}
+
+.titre-accueil {
+  margin-top: 10rem;
+
 .p-accueil {
   text-shadow: 2px 1px 1px black;
   font-weight: 600;
@@ -107,7 +117,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 10rem;
   }
 
   .principal_title h1 {
@@ -124,6 +133,15 @@
 
   .global-div a {
     font-size: 1.25rem;
+  }
+
+  .titre-accueil {
+    margin-bottom: 0;
+  }
+  .lottie-container {
+    width: 20%;
+    margin-left: 29rem;
+    margin-top: 16rem;
   }
 }
 
