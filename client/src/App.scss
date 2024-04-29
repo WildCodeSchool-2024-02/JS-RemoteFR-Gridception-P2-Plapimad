@@ -1,8 +1,16 @@
 * {
   box-sizing: border-box;
   a {
-    cursor: url("./assets/images/benoit.png"), auto !important;
+    cursor: url("./assets/images/soleil.png"), auto !important;
   }
+}
+
+.lien-benoit,
+.nom-container,
+.mail-container,
+.textarea-container,
+.prenom-container {
+  cursor: url("./assets/images/benoit.png"), auto !important;
 }
 
 @font-face {

@@ -55,6 +55,7 @@ function Contact() {
         />
 
         <input
+          className="prenom-container"
           required
           placeholder="Prénom*"
           name="firstName"

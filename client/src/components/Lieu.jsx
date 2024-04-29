@@ -35,7 +35,12 @@ function Lieu({ activites, icon }) {
             <div key={slide.name}>
               <img src={slide.image} alt={slide.name} />
               <div className="overlay">
-                <a href={slide.lien} target="_blank" rel="noreferrer">
+                <a
+                  className="lien-benoit"
+                  href={slide.lien}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <h2 className="overlay_title">{slide.name}</h2>
                 </a>
                 <p className="overlay_text">{slide.description}</p>

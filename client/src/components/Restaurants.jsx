@@ -24,7 +24,12 @@ function Restaurants() {
         <div className="culinaire-container">
           <div>
             <div className="container-card">
-              <a href={randomRestaurant.lien} target="_blank" rel="noreferrer">
+              <a
+                className="lien-benoit"
+                href={randomRestaurant.lien}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <h2>{randomRestaurant.nom}</h2>
               </a>
               <img
