@@ -32,15 +32,10 @@ function Lieu({ activites, icon }) {
       <div className="div_caroussel">
         <Carousel>
           {activitesFiltrees.map((slide) => (
-            <div key={slide.name}>
+            <div className="curseur_soleil" key={slide.name}>
               <img src={slide.image} alt={slide.name} />
               <div className="overlay">
-                <a
-                  className="lien-benoit"
-                  href={slide.lien}
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href={slide.lien} target="_blank" rel="noreferrer">
                   <h2 className="overlay_title">{slide.name}</h2>
                 </a>
                 <p className="overlay_text">{slide.description}</p>

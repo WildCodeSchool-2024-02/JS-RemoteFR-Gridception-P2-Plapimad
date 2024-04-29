@@ -1,12 +1,14 @@
-
 * {
   box-sizing: border-box;
   a {
     cursor: url("./assets/images/soleil.png"), auto !important;
   }
 }
-
+.lieu_all_components {
+  cursor: url("./assets/images/soleil.png"), auto !important;
+}
 .lien-benoit,
+.culinaire-container,
 .nom-container,
 .mail-container,
 .textarea-container,
@@ -51,9 +53,8 @@
 
   body {
     margin: 0;
-    
   }
 }
-html{
+html {
   scroll-behavior: smooth;
 }
