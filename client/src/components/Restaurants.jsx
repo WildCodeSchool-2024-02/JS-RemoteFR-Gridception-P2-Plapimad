@@ -1,5 +1,6 @@
-import restoListe from "../js/Restaurants";
 import Lottie from "lottie-react";
+import restoListe from "../js/Restaurants";
+
 import manger from "../animation/manger.json";
 
 import "../scss/Restaurants.scss";
