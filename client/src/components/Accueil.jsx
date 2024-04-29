@@ -5,7 +5,6 @@ import logoTwitter from "../assets/images/logoTwitter.png";
 import logoPlapimad from "../assets/images/logoPlapimad3.png";
 import logoInstagram from "../assets/images/logoInstagram.png";
 import logoPinterest from "../assets/images/logoPinterest.png";
-import { Link} from "react-router-dom";
 
 function Accueil() {
   return (
@@ -44,22 +43,35 @@ function Accueil() {
             </a>
           </div>
         </div>
-        
-        <ul  className="ul_nav_bar" 
-        >
+
+        <ul className="ul_nav_bar">
           <li>
-            <a  href="#activite-container"  spy={true} smooth={true} offset={50} duration={500}          
-            >Activités</a>
+            <a
+              href="#activite-container"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              Activités
+            </a>
           </li>
           <li>
             <Link to="/Equipe">Equipe</Link>
           </li>
           <li>
-            <a  href="#backgroundimage"  spy={true} smooth={true} offset={50} duration={500}>Contact</a>
+            <a
+              href="#backgroundimage"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              Contact
+            </a>
           </li>
         </ul>
       </div>
-      
 
       <div className="principal_title">
         <h1>AventuresAtmo</h1>
