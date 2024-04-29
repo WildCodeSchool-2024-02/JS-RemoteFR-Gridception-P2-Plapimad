@@ -18,6 +18,10 @@
   }
 }
 
+.manger-container {
+  display: none;
+}
+
 blockquote p::before {
   content: "\201D";
   font-size: 55px;
@@ -54,6 +58,11 @@ blockquote p::before {
   .p-culinaire {
     margin: 0 8rem 2rem 8rem;
   }
+
+  .manger-container {
+    display: block;
+    width: 40%;
+  }
   .resto-container {
     display: flex;
     justify-content: center;
@@ -62,7 +71,13 @@ blockquote p::before {
     margin-left: 3rem;
 
     .desc-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40rem;
+      height: 13rem;
       font-size: 22px;
+      text-align: center;
 
       background-color: rgba(135, 206, 235, 0.3);
       border-radius: 40px 0 40px 0;
