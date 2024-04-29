@@ -75,7 +75,7 @@ function Contact() {
         <textarea
           required
           className="textarea-container"
-          placeholder="Message*"
+          placeholder="Ecrivez votre Message*"
           name="message"
           id="messagearea"
           cols="3"

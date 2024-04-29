@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
   a {
@@ -30,6 +31,7 @@
   h4 {
     font-family: "Vidaloka-Regular";
     text-align: center;
+    scroll-behavior: smooth;
   }
 
   .meteo-title {
@@ -49,5 +51,9 @@
 
   body {
     margin: 0;
+    
   }
+}
+html{
+  scroll-behavior: smooth;
 }

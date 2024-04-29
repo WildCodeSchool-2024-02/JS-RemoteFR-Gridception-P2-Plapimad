@@ -50,8 +50,8 @@ form {
   right: 10%;
   margin: 1rem;
   padding: 1rem;
-  background-color: orangered;
-  border: 2px solid rgb(210, 58, 2);
+  background-color: white;
+  border: 3px solid skyblue;
   border-radius: 40px 0 40px 0;
   display: flex;
   flex-direction: column;
@@ -96,6 +96,10 @@ input {
   margin-bottom: 0.7rem;
   height: 2rem;
   border: 2px solid rgb(10, 173, 238);
+  @media screen and (min-width: 767px) {
+    height: 3.5rem;
+    font-size: large;
+  }
 }
 textarea {
   width: 100%;
@@ -103,6 +107,10 @@ textarea {
   resize: none;
   border: none;
   border: 2px solid rgb(10, 173, 238);
+  @media screen and (min-width: 767px) {
+    font-size: large;
+    height: 15rem;
+  }
 }
 .button {
   margin-top: 2rem;
@@ -113,6 +121,12 @@ textarea {
   height: 3rem;
   color: white;
   border-radius: 20px 0 20px 0;
+  @media screen and (min-width: 767px) {
+    font-size: 1.2rem;
+    height: 5rem;
+    width: 15rem;
+    
+  }
 }
 
 .button:hover {
