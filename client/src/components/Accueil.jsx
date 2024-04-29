@@ -50,29 +50,13 @@ function Accueil() {
 
         <ul className="ul_nav_bar">
           <li>
-            <a
-              href="#activite-container"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
-            >
-              Activités
-            </a>
+            <a href="#activite-container">Activités</a>
           </li>
           <li>
             <Link to="/Equipe">Equipe</Link>
           </li>
           <li>
-            <a
-              href="#backgroundimage"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
-            >
-              Contact
-            </a>
+            <a href="#backgroundimage">Contact</a>
           </li>
         </ul>
       </div>
