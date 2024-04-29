@@ -83,7 +83,7 @@ function Contact() {
           onChange={(e) => handleChangeForm(e)}
         />
 
-        <button className="button" onClick={togglePopup}>
+        <button className="button" type="submit" onClick={togglePopup}>
           Envoyez votre demande
         </button>
       </form>
@@ -91,7 +91,11 @@ function Contact() {
       {showPopup && (
         <div className="popupContainer">
           <Popup />
-          <button className="closePopup" onClick={togglePopupClose}>
+          <button
+            className="closePopup"
+            type="submit"
+            onClick={togglePopupClose}
+          >
             Confirmer
           </button>
         </div>

@@ -64,7 +64,8 @@ const restoListe = [
     adresse: "6 Rue Bretonneau, 37150 Chenonceaux",
     image: resto7,
     lien: "https://www.bonlaboureur.com/fr/hotel-chenonceaux",
-    description: "Le Charme d'une maison d'hote",
+    description:
+      "L'auberge est devenue un grand restaurant gastronomique et un hôtel de charme 5 étoiles, ils font partager l'art de vivre à la française.",
   },
   {
     nom: "Les Hautes Roches",
