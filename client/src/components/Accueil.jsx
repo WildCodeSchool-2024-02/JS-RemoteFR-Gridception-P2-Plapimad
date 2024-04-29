@@ -6,11 +6,9 @@ import logoInstagram from "../assets/images/logoInstagram.png";
 import logoPinterest from "../assets/images/logoPinterest.png";
 import { Link} from "react-router-dom";
 
-import { Link as LinkSmooth}  from "react-scroll";
+
 
 function Accueil() {
-//  const activitesRef = useRef();
-const closeMenu = () => {setClick(false)}
   return (
     <div className="global-div">
       <div className="div_nav_bar">
@@ -51,14 +49,14 @@ const closeMenu = () => {setClick(false)}
         <ul  className="ul_nav_bar" 
         >
           <li>
-            <a  href="#activite-container"  spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}         
+            <a  href="#activite-container"  spy={true} smooth={true} offset={50} duration={500}          
             >Activités</a>
           </li>
           <li>
             <Link to="/Equipe">Equipe</Link>
           </li>
           <li>
-            <a href="#backgroundimage">Contact</a>
+            <a  href="#backgroundimage"  spy={true} smooth={true} offset={50} duration={500}>Contact</a>
           </li>
         </ul>
       </div>
