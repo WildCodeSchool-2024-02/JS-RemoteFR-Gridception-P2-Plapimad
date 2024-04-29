@@ -4,11 +4,13 @@ import logoTwitter from "../assets/images/logoTwitter.png";
 import logoPlapimad from "../assets/images/logoPlapimad3.png";
 import logoInstagram from "../assets/images/logoInstagram.png";
 import logoPinterest from "../assets/images/logoPinterest.png";
-import { Link,} from "react-router-dom";
+import { Link} from "react-router-dom";
+
+import { Link as LinkSmooth}  from "react-scroll";
 
 function Accueil() {
- 
-
+//  const activitesRef = useRef();
+const closeMenu = () => {setClick(false)}
   return (
     <div className="global-div">
       <div className="div_nav_bar">
@@ -45,10 +47,12 @@ function Accueil() {
             </a>
           </div>
         </div>
-
-        <ul className="ul_nav_bar">
+        
+        <ul  className="ul_nav_bar" 
+        >
           <li>
-            <a href="#activite-container">Activités</a>
+            <a  href="#activite-container"  spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}         
+            >Activités</a>
           </li>
           <li>
             <Link to="/Equipe">Equipe</Link>
@@ -58,6 +62,7 @@ function Accueil() {
           </li>
         </ul>
       </div>
+      
 
       <div className="principal_title">
         <h1>AventuresAtmo</h1>
