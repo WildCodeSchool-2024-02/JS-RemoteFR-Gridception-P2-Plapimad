@@ -1,4 +1,6 @@
 import restoListe from "../js/Restaurants";
+import Lottie from "lottie-react";
+import manger from "../animation/manger.json";
 
 import "../scss/Restaurants.scss";
 
@@ -35,9 +37,11 @@ function Restaurants() {
             </div>
           </div>
         </div>
+
         <blockquote>
           <p className="desc-container">{randomRestaurant.description}</p>
         </blockquote>
+        <Lottie className="manger-container" animationData={manger} />
       </div>
     </div>
   );
